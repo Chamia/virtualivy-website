@@ -465,6 +465,13 @@ footer{background:var(--black);padding:72px 5% 28px;}
     "addressCountry": "KE"
   },
   "geo": {"@type": "GeoCoordinates", "latitude": -1.286389, "longitude": 36.817223},
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "08:30",
+    "closes": "17:00"
+  }],
+  "slogan": "Where people thrive and businesses succeed.",
   "knowsAbout": [
     "Recruitment and talent acquisition",
     "People operations and HR outsourcing",
@@ -523,7 +530,10 @@ footer{background:var(--black);padding:72px 5% 28px;}
     {"@type": "Question", "name": "Can Virtual Ivy handle recruitment as well as HR support?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Recruitment is one of our core services. We run hiring end-to-end: job design, sourcing and headhunting, screening, structured interviews, and reference and background checks, and we can design and optimise your overall recruitment process."}},
     {"@type": "Question", "name": "What is an HR audit, and do we need one?", "acceptedAnswer": {"@type": "Answer", "text": "An HR audit is a focused review of your current people practices - contracts, policies, records, and statutory compliance - to identify gaps and risks. It is often the best first step because it shows exactly what to prioritise."}},
     {"@type": "Question", "name": "How do we get started with Virtual Ivy?", "acceptedAnswer": {"@type": "Answer", "text": "It starts with a free consultation. We listen, diagnose where you stand, design a practical plan tailored to your size and stage, then implement alongside you and can stay on as a long-term partner for ongoing support."}},
-    {"@type": "Question", "name": "Is our information kept confidential?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Confidentiality and ethical practice are core to how we work. Everything you share about your business, your people, and your challenges is handled professionally and in confidence."}}
+    {"@type": "Question", "name": "Is our information kept confidential?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Confidentiality and ethical practice are core to how we work. Everything you share about your business, your people, and your challenges is handled professionally and in confidence."}},
+    {"@type": "Question", "name": "How much does HR consulting or outsourcing cost in Kenya?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on scope and headcount. Virtual Ivy works two ways: one-off projects (such as an HR audit, a set of employment contracts, or a recruitment drive) priced per project, and ongoing monthly retainers for continuous support. This is usually far more affordable than hiring a full-time HR manager. Book a free consultation for a tailored quote."}},
+    {"@type": "Question", "name": "Do you handle payroll and statutory deductions like PAYE, NSSF and SHIF?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. As part of People Operations we support payroll processing and coordination, including statutory deductions such as PAYE, NSSF, SHIF (which replaced NHIF) and the Affordable Housing Levy, so your team is paid accurately and on time and your business stays compliant."}},
+    {"@type": "Question", "name": "Can you draft employment contracts that comply with Kenyan law?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. We prepare clear, compliant employment contracts and offer letters aligned to the Employment Act 2007, covering the essential terms - role, pay, hours, leave, and notice - so both you and your employees are protected."}}
   ]
 }
 </script>
@@ -1220,6 +1230,18 @@ footer{background:var(--black);padding:72px 5% 28px;}
         <summary>Is our information kept confidential?</summary>
         <div class="faq-a">Always. Confidentiality and ethical practice are core to how we work. Everything you share with us - about your business, your people, and your challenges - is handled professionally and in confidence.</div>
       </details>
+      <details class="faq-item">
+        <summary>How much does HR consulting or outsourcing cost in Kenya?</summary>
+        <div class="faq-a">It depends on scope and headcount. We work two ways: one-off projects (such as an HR audit, a set of employment contracts, or a recruitment drive) priced per project, and ongoing monthly retainers for continuous support. This is usually far more affordable than hiring a full-time HR manager - book a free consultation for a tailored quote.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Do you handle payroll and statutory deductions (PAYE, NSSF, SHIF)?</summary>
+        <div class="faq-a">Yes. As part of People Operations we support payroll processing and coordination, including statutory deductions such as PAYE, NSSF, SHIF (which replaced NHIF), and the Affordable Housing Levy - so your team is paid accurately and on time, and your business stays compliant.</div>
+      </details>
+      <details class="faq-item">
+        <summary>Can you draft employment contracts that comply with Kenyan law?</summary>
+        <div class="faq-a">Yes. We prepare clear, compliant employment contracts and offer letters aligned to the Employment Act 2007 - covering the essential terms like role, pay, hours, leave, and notice - so both you and your employees are protected.</div>
+      </details>
     </div>
   </section>
 
@@ -1302,12 +1324,21 @@ footer{background:var(--black);padding:72px 5% 28px;}
 
 <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 <script>
+const PAGE_TITLES={
+  home:"Virtual Ivy | HR Consulting, Recruitment & People Operations - Nairobi, Kenya",
+  services:"Services | HR Consulting, Recruitment & People Operations - Virtual Ivy",
+  about:"About Virtual Ivy | HR Consulting & Recruitment, Nairobi Kenya",
+  insights:"Insights | Practical HR Guidance for Kenyan Employers - Virtual Ivy",
+  faq:"HR & Recruitment FAQ - Kenya | Virtual Ivy",
+  contact:"Contact Virtual Ivy | HR Consulting & Recruitment, Nairobi"
+};
 function showPage(id){
   document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
   document.getElementById(id).classList.add('active');
   document.querySelectorAll('[data-page]').forEach(b=>b.classList.remove('active'));
   const btn=document.querySelector(`[data-page="${id}"]`);
   if(btn) btn.classList.add('active');
+  if(PAGE_TITLES[id]) document.title=PAGE_TITLES[id];
   window.scrollTo({top:0,behavior:'smooth'});
 }
 function toggleMob(){
@@ -1357,7 +1388,7 @@ function submitLead(e){
   });
 }
 // Render Lucide line icons
-if(window.lucide)lucide.createIcons();
+if(window.lucide)lucide.createIcons({attrs:{'aria-hidden':'true',focusable:'false'}});
 // Auto-update copyright year
 (function(){var y=document.getElementById('year');if(y)y.textContent=new Date().getFullYear();})();
 // Sticky consultation bar - reveal after scrolling, respect dismissal
