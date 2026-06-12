@@ -661,3 +661,6 @@ html.dark .values{background:#0E1726;}
 html.dark .val-card{background:#131C2B;border-color:rgba(255,255,255,.08);box-shadow:none;}
 html.dark .val-card h4{color:#F1F5F9;}
 html.dark .val-card p{color:#94A3B8;}
+
+/* dark-mode: membership badge label text was inheriting dark --black (invisible) */
+html.dark .mem-badge{color:#CBD5E1;}
