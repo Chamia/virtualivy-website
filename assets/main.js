@@ -1,4 +1,17 @@
-function toggleMob(){var m=document.getElementById('mobMenu');if(!m)return;var open=m.classList.toggle('open');document.body.style.overflow=open?'hidden':'';}
+function toggleMob(){
+  var m=document.getElementById('mobMenu'), b=document.getElementById('mobBackdrop');
+  if(!m)return;
+  var open=m.classList.toggle('open');
+  if(b)b.classList.toggle('open', open);
+  document.body.style.overflow=open?'hidden':'';
+}
+// Highlight the current page in the mobile drawer
+(function(){
+  var page=(location.pathname.split('/').pop()||'index.html')||'index.html';
+  document.querySelectorAll('.mob-nav a').forEach(function(a){
+    if((a.getAttribute('href')||'')===page) a.classList.add('active');
+  });
+})();
 
 // Resources dropdown (click/tap; hover handled by CSS)
 document.addEventListener('click',function(e){

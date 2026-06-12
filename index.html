@@ -136,31 +136,25 @@
       <button class="nav-mob" onclick="toggleMob()" aria-label="Menu"><div class="hamburger"><span></span><span></span><span></span></div></button>
     </div>
   </div>
+<div class="mob-backdrop" id="mobBackdrop" onclick="toggleMob()"></div>
   <div class="mob-menu" id="mobMenu">
     <div class="mob-head">
       <img src="assets/logo.png" alt="Virtual Ivy" class="mob-logo logo-light">
       <img src="assets/logo-white.png" alt="Virtual Ivy" class="mob-logo logo-dark">
-      <div class="mob-head-actions">
-        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode"><i data-lucide="moon"></i></button>
-        <button class="mob-close" onclick="toggleMob()" aria-label="Close menu">&times;</button>
-      </div>
+      <button class="mob-close" onclick="toggleMob()" aria-label="Close menu"><i data-lucide="x"></i></button>
     </div>
-    <nav class="mob-links">
+    <nav class="mob-nav">
       <a href="services.html">Services</a>
       <a href="index.html#industries">Industries</a>
       <a href="about.html">About Us</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <div class="mob-label">Resources</div>
-    <nav class="mob-sublinks">
       <a href="insights.html">Insights</a>
       <a href="faq.html">FAQ</a>
-      <a href="assets/kenya-hr-compliance-checklist.html" target="_blank" rel="noopener">Free HR Checklist</a>
+      <a href="contact.html">Contact</a>
     </nav>
-    <a href="contact.html" class="mob-cta-btn">Book a Free Call</a>
-    <div class="mob-contact">
-      <a href="tel:+254723828190">+254 723 828 190</a>
-      <a href="mailto:hello@virtualivy.net">hello@virtualivy.net</a>
+    <a href="contact.html" class="mob-cta-btn"><i data-lucide="calendar-check"></i> Book a Free Call</a>
+    <div class="mob-foot">
+      <a href="tel:+254723828190"><i data-lucide="phone"></i> +254 723 828 190</a>
+      <a href="mailto:hello@virtualivy.net"><i data-lucide="mail"></i> hello@virtualivy.net</a>
     </div>
   </div>
 </nav>
