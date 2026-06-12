@@ -1,4 +1,4 @@
-function toggleMob(){var m=document.getElementById('mobMenu');if(m)m.classList.toggle('open');}
+function toggleMob(){var m=document.getElementById('mobMenu');if(!m)return;var open=m.classList.toggle('open');document.body.style.overflow=open?'hidden':'';}
 
 // Resources dropdown (click/tap; hover handled by CSS)
 document.addEventListener('click',function(e){
