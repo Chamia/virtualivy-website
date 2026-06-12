@@ -45,3 +45,18 @@ window.addEventListener('scroll',function(){
 
 // Lucide line icons
 if(window.lucide)lucide.createIcons({attrs:{'aria-hidden':'true',focusable:'false'}});
+
+// THEME (light/dark)
+function applyThemeIcon(t){
+  document.querySelectorAll('.theme-toggle i').forEach(function(ic){ic.setAttribute('data-lucide', t==='dark'?'sun':'moon');});
+  if(window.lucide)lucide.createIcons({attrs:{'aria-hidden':'true',focusable:'false'}});
+}
+function setTheme(t){
+  document.documentElement.classList.toggle('dark', t==='dark');
+  try{localStorage.setItem('theme', t);}catch(e){}
+  applyThemeIcon(t);
+}
+function toggleTheme(){
+  setTheme(document.documentElement.classList.contains('dark') ? 'light' : 'dark');
+}
+applyThemeIcon(document.documentElement.classList.contains('dark') ? 'dark' : 'light');

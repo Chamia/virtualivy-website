@@ -539,3 +539,42 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 .h-section.dark{background:var(--navy);}
 .h-section.dark .h-head h2{color:#fff;}
 .h-section.dark .h-head p{color:#94a3b8;}
+
+/* ===================== THEME TOGGLE + DARK MODE ===================== */
+.theme-toggle{background:none;border:none;cursor:pointer;color:var(--mid);padding:8px;border-radius:8px;display:inline-flex;align-items:center;transition:.2s;}
+.theme-toggle:hover{color:var(--teal);background:var(--grey);}
+.theme-toggle svg{width:19px;height:19px;}
+.mob-head-actions{display:flex;align-items:center;gap:4px;}
+.mob-head .theme-toggle{color:#fff;}
+.mob-head .theme-toggle:hover{background:rgba(255,255,255,.08);}
+
+html.dark{--bg:#0B1220;--grey:#0E1726;--mid:#94A3B8;--teal-light:rgba(27,181,216,.16);color-scheme:dark;}
+html.dark body{color:#CBD5E1;}
+/* chrome */
+html.dark nav{background:#0E1726;border-bottom-color:rgba(255,255,255,.07);}
+html.dark .nav-links a.navlink,html.dark .nav-links .dd-toggle{color:#94A3B8;}
+html.dark .nav-links a.navlink:hover,html.dark .nav-links .dd-toggle:hover,html.dark .navlink.active{color:var(--teal);}
+html.dark .hamburger span{background:#CBD5E1;}
+html.dark .dd-menu{background:#131C2B;border-color:rgba(255,255,255,.08);}
+html.dark .dd-menu a{color:#CBD5E1;}
+html.dark .dd-menu a:hover{background:#1B2738;color:var(--teal);}
+/* sections */
+html.dark .h-section{background:#0B1220;}
+html.dark .h-section.alt{background:#0E1726;}
+html.dark .h-section.tint{background:#0C1A26;}
+html.dark .h-section.tint .h-step .circle{border-color:#0C1A26;}
+html.dark .h-hero{background:linear-gradient(180deg,#0B1220,#0E1726);}
+html.dark .pain,html.dark .why,html.dark .services-overview,html.dark .serv-section,html.dark .credentials,html.dark .insights-section,html.dark .faq-section,html.dark .contact-section,html.dark .memberships,html.dark .about-text{background:#0B1220;}
+/* surfaces / cards */
+html.dark .h-card,html.dark .h-tcard,html.dark .faq-item,html.dark .sov-card,html.dark .contact-form,html.dark .cred-item,html.dark .insight-card,html.dark .pain-item,html.dark .serv-detail,html.dark .contact-method,html.dark .mem-badge,html.dark .stat{background:#131C2B;border-color:rgba(255,255,255,.08);box-shadow:none;}
+html.dark .h-card:hover{box-shadow:0 24px 50px rgba(0,0,0,.45);}
+html.dark .form-group input,html.dark .form-group select,html.dark .form-group textarea{background:#0E1726;border-color:rgba(255,255,255,.12);color:#E2E8F0;}
+/* headings + text -> light */
+html.dark h1,html.dark h2,html.dark h3,html.dark h4,html.dark .h-card h3,html.dark .h-step h4,html.dark .h-chal-item h4,html.dark .h-tperson .nm,html.dark .faq-item summary,html.dark .sov-card h3,html.dark .insight-body h3,html.dark .si-text strong,html.dark .contact-method .cm-val,html.dark .cred-item strong,html.dark .fname{color:#F1F5F9;}
+html.dark .h-tcard blockquote{color:#CBD5E1;}
+html.dark .serv-content p,html.dark .why-text p,html.dark .about-text p,html.dark .contact-info p,html.dark .insight-body p,html.dark .pain-item p,html.dark .faq-item .faq-a{color:#94A3B8;}
+html.dark .sov-list li,html.dark .serv-items li{border-bottom-color:rgba(255,255,255,.08);}
+html.dark .form-group label{color:#CBD5E1;}
+/* buttons */
+html.dark .h-btn-ghost{color:#E2E8F0;border-color:rgba(255,255,255,.18);}
+html.dark .h-btn-ghost:hover{border-color:var(--teal);color:var(--teal);}

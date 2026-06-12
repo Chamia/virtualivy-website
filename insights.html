@@ -29,6 +29,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem('theme')||((window.matchMedia&&matchMedia('(prefers-color-scheme:dark)').matches)?'dark':'light');if(t==='dark')document.documentElement.classList.add('dark');}catch(e){}</script>
 <link rel="stylesheet" href="assets/styles.css">
 <script type="application/ld+json">
 {
@@ -126,6 +127,7 @@
       </div>
       <a href="about.html" class="navlink">About Us</a>
       <a href="contact.html" class="navlink">Contact</a>
+      <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode"><i data-lucide="moon"></i></button>
       <a href="contact.html" class="nav-cta">Book a Free Call</a>
     </div>
     <button class="nav-mob" onclick="toggleMob()" aria-label="Menu"><div class="hamburger"><span></span><span></span><span></span></div></button>
@@ -133,7 +135,10 @@
   <div class="mob-menu" id="mobMenu">
     <div class="mob-head">
       <img src="assets/logo-white.png" alt="Virtual Ivy" class="mob-logo">
-      <button class="mob-close" onclick="toggleMob()" aria-label="Close menu">&times;</button>
+      <div class="mob-head-actions">
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode"><i data-lucide="moon"></i></button>
+        <button class="mob-close" onclick="toggleMob()" aria-label="Close menu">&times;</button>
+      </div>
     </div>
     <nav class="mob-links">
       <a href="services.html">Services</a>
