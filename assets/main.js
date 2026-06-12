@@ -60,3 +60,16 @@ function toggleTheme(){
   setTheme(document.documentElement.classList.contains('dark') ? 'light' : 'dark');
 }
 applyThemeIcon(document.documentElement.classList.contains('dark') ? 'dark' : 'light');
+
+// Scroll-reveal (progressive enhancement; respects reduced-motion)
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var els=document.querySelectorAll('.h-head,.h-card,.h-chal-item,.h-step,.h-tcard,.faq-item,.h-benefit,.h-trust-inner');
+  if(!els.length)return;
+  els.forEach(function(el){el.classList.add('reveal');});
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
+  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
+  els.forEach(function(el){io.observe(el);});
+})();
