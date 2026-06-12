@@ -132,7 +132,7 @@
 <body>
 <nav>
   <div class="nav-inner">
-    <a class="nav-logo" href="index.html"><img src="assets/logo.png" alt="Virtual Ivy" class="nav-logo-img"></a>
+    <a class="nav-logo" href="index.html"><img src="assets/logo.png" alt="Virtual Ivy" class="nav-logo-img logo-light"><img src="assets/logo-white.png" alt="Virtual Ivy" class="nav-logo-img logo-dark"></a>
     <div class="nav-links">
       <a href="services.html" class="navlink">Services</a>
       <a href="index.html#industries" class="navlink">Industries</a>
@@ -149,7 +149,10 @@
       <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle dark mode" title="Toggle dark mode"><i data-lucide="moon"></i></button>
       <a href="contact.html" class="nav-cta">Book a Free Call</a>
     </div>
-    <button class="nav-mob" onclick="toggleMob()" aria-label="Menu"><div class="hamburger"><span></span><span></span><span></span></div></button>
+    <div class="nav-bar-right">
+      <button class="theme-toggle theme-toggle-bar" onclick="toggleTheme()" aria-label="Toggle dark mode"><i data-lucide="moon"></i></button>
+      <button class="nav-mob" onclick="toggleMob()" aria-label="Menu"><div class="hamburger"><span></span><span></span><span></span></div></button>
+    </div>
   </div>
   <div class="mob-menu" id="mobMenu">
     <div class="mob-head">
