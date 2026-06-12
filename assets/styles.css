@@ -664,3 +664,7 @@ html.dark .val-card p{color:#94A3B8;}
 
 /* dark-mode: membership badge label text was inheriting dark --black (invisible) */
 html.dark .mem-badge{color:#CBD5E1;}
+
+/* QA: brighter FAQ toggle in dark mode for clearer affordance */
+html.dark .faq-item summary::after{background:rgba(27,181,216,.20);color:#5FD3EC;}
+html.dark .faq-item[open] summary::after{background:var(--teal);color:#0F172A;}

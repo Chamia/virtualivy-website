@@ -65,7 +65,7 @@ applyThemeIcon(document.documentElement.classList.contains('dark') ? 'dark' : 'l
 (function(){
   if(!('IntersectionObserver' in window))return;
   if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  var els=document.querySelectorAll('.h-head,.h-card,.h-chal-item,.h-step,.h-tcard,.faq-item,.h-benefit,.h-trust-inner');
+  var els=document.querySelectorAll('.h-head,.h-card,.h-chal-item,.h-step,.h-tcard,.h-benefit,.h-trust-inner');
   if(!els.length)return;
   els.forEach(function(el){el.classList.add('reveal');});
   var io=new IntersectionObserver(function(entries){
