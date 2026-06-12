@@ -199,15 +199,15 @@ nav{position:sticky;top:0;z-index:200;background:var(--white);border-bottom:1px 
 .about-text h2{font-size:clamp(26px,3vw,38px);margin-bottom:16px;line-height:1.3;}
 .about-text p{font-size:14px;color:var(--mid);line-height:1.9;margin-bottom:16px;}
 .about-text em{color:var(--teal-dark);font-style:italic;font-family:'Libre Baskerville',serif;}
-.values{background:var(--black);padding:80px 5%;}
+.values{background:var(--grey);padding:80px 5%;}
 .values-inner{max-width:1100px;margin:0 auto;}
-.values h2{color:var(--white);font-size:clamp(24px,2.5vw,34px);margin-bottom:8px;}
+.values h2{color:var(--navy);font-size:clamp(24px,2.5vw,34px);margin-bottom:8px;}
 .val-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:40px;}
-.val-card{background:rgba(255,255,255,.05);border:1px solid rgba(41,185,204,.2);border-radius:14px;padding:28px;transition:.2s;}
+.val-card{background:#fff;border:1px solid #e6ebf0;box-shadow:0 6px 22px rgba(15,23,42,.05);border-radius:14px;padding:28px;transition:.2s;}
 .val-card:hover{background:rgba(41,185,204,.1);}
 .val-card .vi{font-size:28px;margin-bottom:14px;}
-.val-card h4{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;color:var(--white);margin-bottom:8px;}
-.val-card p{font-size:12px;color:#999;line-height:1.6;}
+.val-card h4{font-family:'Montserrat',sans-serif;font-size:14px;font-weight:700;color:var(--navy);margin-bottom:8px;}
+.val-card p{font-size:12px;color:var(--mid);line-height:1.6;}
 .credentials{padding:80px 5%;background:var(--grey);}
 .cred-inner{max-width:1100px;margin:0 auto;}
 .cred-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;margin-top:40px;}
@@ -654,3 +654,10 @@ html.dark .mob-head .theme-toggle{color:#fff;}
 .memberships h2{color:var(--navy);}
 .contact-method{background:#F1F5F9;}
 .serv-detail{background:#fff;border:1px solid #eef2f7;box-shadow:0 6px 24px rgba(15,23,42,.05);}
+
+
+/* About "Our Values" theme-aware in dark mode */
+html.dark .values{background:#0E1726;}
+html.dark .val-card{background:#131C2B;border-color:rgba(255,255,255,.08);box-shadow:none;}
+html.dark .val-card h4{color:#F1F5F9;}
+html.dark .val-card p{color:#94A3B8;}
