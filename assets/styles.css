@@ -731,3 +731,24 @@ html.dark .mob-close:hover{background:rgba(255,255,255,.08);}
 html.dark .mob-nav a{color:#F1F5F9;border-bottom-color:rgba(255,255,255,.08);}
 html.dark .mob-foot a{color:#94A3B8;}
 @media(min-width:769px){.mob-menu,.mob-backdrop{display:none;}}
+
+/* ===================== LANDING: hero accent + mobile polish ===================== */
+.h-hero h1 .accent{color:var(--teal);}
+.h-hero h1{letter-spacing:-.6px;}
+@media(max-width:680px){
+  .h-hero{padding:40px 0 56px;}
+  .h-hero h1{font-size:30px;line-height:1.16;}
+  .h-hero p.lead{font-size:16px;margin-bottom:26px;}
+  .h-hero-img{height:300px;border-radius:18px;}
+  .h-hero-btns{flex-direction:column;align-items:stretch;}
+  .h-hero-btns .h-btn{width:100%;justify-content:center;padding:15px;}
+  .h-hero-trust{gap:8px 18px;font-size:13px;}
+  .h-section{padding:52px 0;}
+  .h-head{margin-bottom:34px;}
+  .h-head h2{font-size:25px;}
+  .h-card{padding:26px;}
+  .h-stat .num{font-size:34px;}
+  .h-split .lead{max-width:none;}
+  .h-cta{padding:60px 22px;}
+  .h-wrap{padding:0 20px;}
+}
