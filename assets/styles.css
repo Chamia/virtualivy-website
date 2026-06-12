@@ -649,6 +649,8 @@ html.dark .mob-links a{color:#fff;border-bottom-color:rgba(255,255,255,.08);}
 html.dark .mob-sublinks a,html.dark .mob-contact a{color:#94A3B8;}
 html.dark .mob-head .theme-toggle{color:#fff;}
 .nav-links a.navlink,.nav-links .dd-toggle{color:#334155;}
-.mem-badge{background:#fff;border:1px solid #e6ebf0;box-shadow:0 4px 16px rgba(15,23,42,.04);}
+.memberships{background:var(--grey);}
+.mem-badge{background:#fff;border:1px solid #e2e8f0;box-shadow:0 6px 20px rgba(15,23,42,.05);}
+.memberships h2{color:var(--navy);}
 .contact-method{background:#F1F5F9;}
 .serv-detail{background:#fff;border:1px solid #eef2f7;box-shadow:0 6px 24px rgba(15,23,42,.05);}
