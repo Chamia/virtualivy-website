@@ -530,7 +530,19 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
   .h-trust-inner{padding:28px 22px;}
 }
 
-@media(max-width:560px){.footer-top{grid-template-columns:1fr;}}
+@media(max-width:560px){
+  .footer-top{grid-template-columns:repeat(3,1fr);gap:14px;}
+  .footer-brand{grid-column:1 / -1;}
+  .footer-col h5{font-size:11px;margin-bottom:12px;letter-spacing:.5px;}
+  .footer-col ul li{margin-bottom:9px;}
+  .footer-col ul li a,.footer-col ul li button{font-size:12px;}
+  .footer-contact li{font-size:11.5px;gap:7px;margin-bottom:12px;}
+  .footer-contact li .fc-ico{min-width:15px;}
+  .footer-contact li .fc-ico svg{width:14px;height:14px;}
+  .footer-hours{font-size:11px;gap:7px;}
+  .footer-contact a,.footer-contact span,.footer-hours span{word-break:break-word;}
+  .footer-socials{gap:8px;}
+}
 
 /* teal-forward section treatments */
 .h-section.tint{background:var(--teal-light);}
@@ -668,3 +680,25 @@ html.dark .mem-badge{color:#CBD5E1;}
 /* QA: brighter FAQ toggle in dark mode for clearer affordance */
 html.dark .faq-item summary::after{background:rgba(27,181,216,.20);color:#5FD3EC;}
 html.dark .faq-item[open] summary::after{background:var(--teal);color:#0F172A;}
+
+/* ===================== IMPROVED MOBILE NAVIGATION ===================== */
+.mob-menu{padding:18px 24px 44px;}
+.mob-links a{display:flex;align-items:center;justify-content:space-between;font-size:22px;padding:16px 0;}
+.mob-links a::after{content:'\203A';color:var(--mid);font-size:24px;font-weight:400;line-height:1;}
+.mob-links a:hover::after,.mob-links a:active::after{color:var(--teal);}
+html.dark .mob-links a::after{color:#64748B;}
+.mob-sublinks a{display:flex;align-items:center;gap:9px;font-size:15px;padding:11px 0;}
+.mob-sublinks a::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--teal);flex-shrink:0;}
+.mob-cta-btn{display:flex;align-items:center;justify-content:center;gap:8px;font-size:16px;padding:16px;margin-top:26px;box-shadow:0 10px 24px rgba(27,181,216,.3);}
+.mob-contact{border-top:1px solid #eef2f7;padding-top:18px;}
+html.dark .mob-contact{border-top-color:rgba(255,255,255,.08);}
+.mob-contact a{display:inline-flex;align-items:center;gap:8px;font-size:13.5px;}
+/* bigger, easier hamburger + bar spacing on mobile */
+@media(max-width:768px){
+  .nav-inner{height:64px;}
+  .nav-logo-img{height:38px;}
+  .nav-bar-right{gap:4px;}
+  .nav-mob{padding:10px;}
+  .hamburger span{width:24px;}
+  .theme-toggle{padding:9px;}
+}
