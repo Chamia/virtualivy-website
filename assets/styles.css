@@ -531,3 +531,11 @@ a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,s
 }
 
 @media(max-width:560px){.footer-top{grid-template-columns:1fr;}}
+
+/* teal-forward section treatments */
+.h-section.tint{background:var(--teal-light);}
+.h-section.tint .h-steps .connector{background:linear-gradient(90deg,var(--teal-dark),rgba(15,23,42,.18));}
+.h-section.tint .h-step .circle{border-color:var(--teal-light);}
+.h-section.dark{background:var(--navy);}
+.h-section.dark .h-head h2{color:#fff;}
+.h-section.dark .h-head p{color:#94a3b8;}
