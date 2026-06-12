@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#27BED9">
+<meta name="theme-color" content="#1BB5D8">
 <meta http-equiv="content-language" content="en-KE">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://virtualivy.co.ke/">
@@ -25,7 +25,7 @@
 <meta name="twitter:title" content="Virtual Ivy | HR Consulting, Recruitment &amp; People Operations - Nairobi, Kenya">
 <meta name="twitter:description" content="Virtual Ivy is a Nairobi-based HR consulting and recruitment firm helping growing businesses, NGOs, and startups build people-centered workplaces - recruitment, people operations, HR strategy, learning & development, and HR projects. Strategy to execution, locally and globally.">
 <meta name="twitter:image" content="https://virtualivy.co.ke/assets/og-image.png">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2327BED9'/%3E%3Ctext x='16' y='24' font-family='Georgia,serif' font-weight='700' font-size='22' text-anchor='middle' fill='%231A1A1A'%3EC%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231BB5D8'/%3E%3Ctext x='16' y='24' font-family='Georgia,serif' font-weight='700' font-size='22' text-anchor='middle' fill='%231A1A1A'%3EC%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -114,9 +114,8 @@
   <div class="nav-inner">
     <a class="nav-logo" href="index.html"><img src="assets/logo.png" alt="Virtual Ivy" class="nav-logo-img"></a>
     <div class="nav-links">
-      <a href="index.html" class="navlink active">Home</a>
       <a href="services.html" class="navlink">Services</a>
-      <a href="about.html" class="navlink">About</a>
+      <a href="index.html#industries" class="navlink">Industries</a>
       <div class="nav-dropdown">
         <button class="dd-toggle navlink" aria-haspopup="true" aria-expanded="false">Resources ▾</button>
         <div class="dd-menu">
@@ -125,7 +124,9 @@
           <a href="assets/kenya-hr-compliance-checklist.html" target="_blank" rel="noopener">Free HR Checklist</a>
         </div>
       </div>
-      <a href="contact.html" class="nav-cta">Let's Talk</a>
+      <a href="about.html" class="navlink">About Us</a>
+      <a href="contact.html" class="navlink">Contact</a>
+      <a href="contact.html" class="nav-cta">Book a Free Call</a>
     </div>
     <button class="nav-mob" onclick="toggleMob()" aria-label="Menu"><div class="hamburger"><span></span><span></span><span></span></div></button>
   </div>
@@ -135,9 +136,9 @@
       <button class="mob-close" onclick="toggleMob()" aria-label="Close menu">&times;</button>
     </div>
     <nav class="mob-links">
-      <a href="index.html">Home</a>
       <a href="services.html">Services</a>
-      <a href="about.html">About</a>
+      <a href="index.html#industries">Industries</a>
+      <a href="about.html">About Us</a>
       <a href="contact.html">Contact</a>
     </nav>
     <div class="mob-label">Resources</div>
@@ -146,7 +147,7 @@
       <a href="faq.html">FAQ</a>
       <a href="assets/kenya-hr-compliance-checklist.html" target="_blank" rel="noopener">Free HR Checklist</a>
     </nav>
-    <a href="contact.html" class="mob-cta-btn">Book a Free Consultation</a>
+    <a href="contact.html" class="mob-cta-btn">Book a Free Call</a>
     <div class="mob-contact">
       <a href="tel:+254723828190">+254 723 828 190</a>
       <a href="mailto:hello@virtualivy.net">hello@virtualivy.net</a>
@@ -155,257 +156,166 @@
 </nav>
 
 <main>
-<section class="hero">
-    <div class="hero-inner">
-      <div class="hero-content">
-        <div class="hero-label">HR Support for Growing Organisations</div>
-        <h1>Finally, HR support that <em>gets it.</em></h1>
-        <p class="hero-sub">Practical, scalable HR for growing businesses, NGOs, and organisations - from recruitment and people operations to HR strategy - without the full-time overhead.</p>
-        <div class="hero-btns">
-          <button class="btn btn-primary" onclick="location.href='contact.html'">Book a Free Call</button>
-          <button class="btn btn-outline" onclick="location.href='services.html'">Explore Services</button>
-        </div>
-      </div>
-      <div class="hero-visual">
-        <div class="hero-card featured">
-          <span class="icon-tile it-teal" style="margin-bottom:14px;"><i data-lucide="search"></i></span>
-          <h4>Recruitment & Talent Acquisition</h4>
-          <p>Attract, assess, and hire the right people - from job design to onboarding.</p>
-        </div>
-        <div class="hero-card">
-          <span class="icon-tile it-coral" style="margin-bottom:14px;"><i data-lucide="settings"></i></span>
-          <h4>People Operations</h4>
-          <p>Day-to-day HR handled, so you can focus on running your business.</p>
-        </div>
-        <div class="hero-card">
-          <span class="icon-tile it-navy" style="margin-bottom:14px;"><i data-lucide="compass"></i></span>
-          <h4>HR Strategy & Advisory</h4>
-          <p>Structured, forward-thinking HR systems - a trusted advisor, not just a vendor.</p>
-        </div>
-      </div>
-    </div>
-    <svg class="hero-wave" viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#ffffff"/></svg>
-  </section>
 
-  <!-- PAIN POINTS -->
-  <section class="pain">
-    <div class="pain-inner">
-      <div class="label">Sound familiar?</div>
-      <h2>You know you need HR sorted. You just haven't had the time.</h2>
-      <div class="divider"></div>
-      <div class="pain-grid">
-        <div class="pain-item"><span class="icon-tile it-navy" style="margin-bottom:14px;"><i data-lucide="clipboard-list"></i></span><p>"Our HR processes are messy - or non-existent."</p></div>
-        <div class="pain-item"><span class="icon-tile it-amber" style="margin-bottom:14px;"><i data-lucide="scale"></i></span><p>"I'm not sure we're doing things compliantly and professionally."</p></div>
-        <div class="pain-item"><span class="icon-tile it-coral" style="margin-bottom:14px;"><i data-lucide="trending-up"></i></span><p>"We're growing, and things are starting to break."</p></div>
-        <div class="pain-item"><span class="icon-tile it-teal" style="margin-bottom:14px;"><i data-lucide="clock"></i></span><p>"We need to hire, but we don't have the time or structure."</p></div>
-        <div class="pain-item"><span class="icon-tile it-purple" style="margin-bottom:14px;"><i data-lucide="briefcase"></i></span><p>"I need professional HR support, but not a full in-house team."</p></div>
-        <div class="pain-item"><span class="icon-tile it-green" style="margin-bottom:14px;"><i data-lucide="help-circle"></i></span><p>"I want to do things professionally - I just don't know where to start."</p></div>
+<!-- 1. HERO -->
+<section class="h-hero">
+  <div class="h-wrap h-hero-grid">
+    <div>
+      <div class="h-eyebrow">HR Support for Growing Organisations</div>
+      <h1>HR consulting and people operations support for growing businesses.</h1>
+      <p class="lead">Practical, scalable HR solutions for startups, NGOs and organisations &mdash; from recruitment and people operations to HR strategy and compliance.</p>
+      <div class="h-hero-btns">
+        <a href="contact.html" class="h-btn h-btn-primary"><i data-lucide="calendar-check"></i> Book a Free Call</a>
+        <a href="services.html" class="h-btn h-btn-ghost">Explore Services</a>
       </div>
     </div>
-  </section>
+    <div class="h-hero-visual">
+      <img src="assets/hero.jpg" alt="HR consultants and African professionals collaborating in a modern Nairobi office" class="h-hero-img">
+      <div class="h-hero-badge b1"><span class="ico"><i data-lucide="users"></i></span><span class="t">Trusted partner<strong>10+ years</strong></span></div>
+      <div class="h-hero-badge b2"><span class="ico"><i data-lucide="shield-check"></i></span><span class="t">Compliant &amp; practical<strong>Kenyan labour law</strong></span></div>
+    </div>
+  </div>
+</section>
 
-  <!-- SERVICES OVERVIEW -->
-  <section class="services-overview">
-    <div class="sov-inner">
-      <div class="label">What We Do</div>
-      <h2 style="font-size:clamp(26px,3vw,38px);margin-bottom:8px;">Five ways we support your people</h2>
-      <div class="divider"></div>
-      <p style="font-size:14px;color:var(--mid);line-height:1.8;max-width:620px;">Strategic HR thinking with hands-on execution - so you don't just design effective people strategies, you successfully implement them.</p>
-      <div class="sov-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
-        <div class="sov-card">
-          <span class="tag" style="margin-bottom:20px;display:inline-block;">01 · Recruitment</span>
-          <h3>Recruitment & Talent Acquisition</h3>
-          <p>Attract, assess, and hire the right talent efficiently - from job design through to onboarding.</p>
-          <ul class="sov-list">
-            <li>End-to-end recruitment</li>
-            <li>Headhunting & executive search</li>
-            <li>Bulk & project-based hiring</li>
-            <li>Screening, shortlisting & interviews</li>
-            <li>Reference & background checks</li>
-          </ul>
-        </div>
-        <div class="sov-card">
-          <span class="tag" style="margin-bottom:20px;display:inline-block;">02 · People Ops</span>
-          <h3>People Operations (HR Outsourcing)</h3>
-          <p>We run your day-to-day HR so you can focus on your core operations.</p>
-          <ul class="sov-list">
-            <li>Onboarding & documentation</li>
-            <li>HR administration & records</li>
-            <li>Leave & attendance management</li>
-            <li>Payroll support & coordination</li>
-            <li>Employee relations & engagement</li>
-          </ul>
-        </div>
-        <div class="sov-card">
-          <span class="tag" style="margin-bottom:20px;display:inline-block;">03 · Strategy</span>
-          <h3>HR Strategy & Advisory</h3>
-          <p>Build structured, forward-thinking HR systems that scale with you.</p>
-          <ul class="sov-list">
-            <li>HR policy development & review</li>
-            <li>Organizational structure design</li>
-            <li>Performance management systems</li>
-            <li>Workforce planning</li>
-            <li>Change management support</li>
-          </ul>
-        </div>
-        <div class="sov-card">
-          <span class="tag" style="margin-bottom:20px;display:inline-block;">04 · Learning</span>
-          <h3>Learning, Development & Capacity Building</h3>
-          <p>Grow your people and build long-term organizational capability.</p>
-          <ul class="sov-list">
-            <li>Training needs assessments</li>
-            <li>Customized training programs</li>
-            <li>Leadership & management development</li>
-            <li>Employee wellness & engagement</li>
-          </ul>
-        </div>
-        <div class="sov-card">
-          <span class="tag" style="margin-bottom:20px;display:inline-block;">05 · Projects</span>
-          <h3>HR Projects & Consulting</h3>
-          <p>Tailored support for specific HR needs and transformations.</p>
-          <ul class="sov-list">
-            <li>HR audits & compliance reviews</li>
-            <li>HR system setup & restructuring</li>
-            <li>Employer branding support</li>
-            <li>Recruitment process design</li>
-          </ul>
-        </div>
-        <div class="sov-card" style="display:flex;flex-direction:column;justify-content:center;background:var(--teal-light);">
-          <h3 style="color:var(--teal-dark);">Not sure what you need?</h3>
-          <p>Tell us what's going on and we'll recommend the right mix - strategy to execution, end-to-end.</p>
-          <button class="btn btn-primary" onclick="location.href='contact.html'">Book a Free Call →</button>
-        </div>
+<!-- 2. TRUST & CREDIBILITY BAR -->
+<section class="h-trust">
+  <div class="h-wrap">
+    <div class="h-trust-inner">
+      <div class="h-stats">
+        <div class="h-stat"><div class="num">150<span>+</span></div><div class="lbl">Projects Completed</div></div>
+        <div class="h-stat"><div class="num">95<span>%</span></div><div class="lbl">Client Retention</div></div>
+        <div class="h-stat"><div class="num">10<span>+</span></div><div class="lbl">Years Experience</div></div>
+      </div>
+      <!-- TODO: confirm these are REAL clients/partners you have permission to display, or replace. -->
+      <div class="h-logos">
+        <span class="cap">Trusted by teams across Kenya &amp; the region</span>
+        <span class="h-logo">Moringa School</span>
+        <span class="h-logo">IBM Foundation</span>
+        <span class="h-logo">ILRI</span>
+        <span class="h-logo">BRAC</span>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- HOW WE WORK -->
-  <section class="process">
-    <div class="process-inner">
-      <div class="label">How We Work</div>
-      <h2>Practical from day one - strategy to execution</h2>
-      <div class="divider"></div>
-      <p class="process-lead">No jargon, no off-the-shelf templates. We combine strategic HR thinking with hands-on delivery - so the plan doesn't sit on a shelf, it actually gets implemented.</p>
-      <div class="process-grid">
-        <div class="process-step">
-          <div class="step-num">1</div>
-          <h4>Listen</h4>
-          <p>We start with a free consultation to understand your business, your people, and what's actually getting in the way.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">2</div>
-          <h4>Diagnose</h4>
-          <p>We assess where you stand - the gaps, risks, and quick wins - through a focused HR review or audit.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">3</div>
-          <h4>Tailor</h4>
-          <p>We design a practical plan built around your context and size. No templates - solutions made to fit.</p>
-        </div>
-        <div class="process-step">
-          <div class="step-num">4</div>
-          <h4>Implement & Support</h4>
-          <p>We don't just advise - we execute alongside you, and stay on as a long-term partner as you grow.</p>
-        </div>
-      </div>
+<!-- 3. SERVICES -->
+<section class="h-section">
+  <div class="h-wrap">
+    <div class="h-head">
+      <div class="h-eyebrow">What We Do</div>
+      <h2>Strategic HR solutions tailored to your needs.</h2>
+      <p>From first hire to full team &mdash; the structure, expertise, and hands-on support to manage your people with confidence.</p>
     </div>
-  </section>
+    <div class="h-grid-3">
+      <a class="h-card" href="services.html"><span class="tile"><i data-lucide="messages-square"></i></span><h3>HR Advisory</h3><p>On-call expertise for people decisions, disputes, and day-to-day guidance &mdash; a trusted advisor, not a vendor.</p><span class="more">Learn more <i data-lucide="arrow-right"></i></span></a>
+      <a class="h-card" href="services.html"><span class="tile"><i data-lucide="search"></i></span><h3>Recruitment Support</h3><p>End-to-end hiring: job design, sourcing, screening, structured interviews, and background checks.</p><span class="more">Learn more <i data-lucide="arrow-right"></i></span></a>
+      <a class="h-card" href="services.html"><span class="tile"><i data-lucide="bar-chart-3"></i></span><h3>Performance Management</h3><p>KPIs, appraisal frameworks, and development plans that help your team perform and grow.</p><span class="more">Learn more <i data-lucide="arrow-right"></i></span></a>
+      <a class="h-card" href="services.html"><span class="tile"><i data-lucide="shield-check"></i></span><h3>HR Compliance</h3><p>Stay aligned with the Employment Act 2007 and statutory obligations &mdash; PAYE, NSSF, SHIF and more.</p><span class="more">Learn more <i data-lucide="arrow-right"></i></span></a>
+      <a class="h-card" href="services.html"><span class="tile"><i data-lucide="settings"></i></span><h3>People Operations</h3><p>Onboarding, records, leave, payroll support, and employee relations handled day to day.</p><span class="more">Learn more <i data-lucide="arrow-right"></i></span></a>
+      <a class="h-card" href="services.html"><span class="tile"><i data-lucide="compass"></i></span><h3>HR Strategy</h3><p>Structured, forward-thinking HR systems, org design, and workforce planning that scale with you.</p><span class="more">Learn more <i data-lucide="arrow-right"></i></span></a>
+    </div>
+  </div>
+</section>
 
-  <!-- WHO WE SERVE -->
-  <section class="serve">
-    <div class="serve-inner">
-      <div class="label">Who We Serve</div>
-      <h2 style="font-size:clamp(26px,3vw,38px);margin-bottom:8px;">Built for the people responsible for people</h2>
-      <div class="divider"></div>
-      <p style="font-size:14px;color:var(--mid);line-height:1.8;max-width:620px;">We work with leaders who own people decisions but aren't necessarily HR specialists - and we tailor everything to your size and stage.</p>
-      <div class="serve-grid">
-        <div class="serve-card">
-          <span class="icon-tile it-coral" style="margin-bottom:16px;"><i data-lucide="rocket"></i></span>
-          <h4>Startups</h4>
-          <p>Building your first team? We set up HR foundations the right way from day one, so culture and compliance grow with you.</p>
-        </div>
-        <div class="serve-card">
-          <span class="icon-tile it-teal" style="margin-bottom:16px;"><i data-lucide="trending-up"></i></span>
-          <h4>SMEs & Growing Businesses</h4>
-          <p>Outgrown informal people management? We put proper structure, contracts, and processes in place so you can scale with confidence.</p>
-        </div>
-        <div class="serve-card">
-          <span class="icon-tile it-green" style="margin-bottom:16px;"><i data-lucide="globe"></i></span>
-          <h4>NGOs & Development Orgs</h4>
-          <p>Donor-ready HR, clear policies, and compliant employment practices that match the standards your funders expect.</p>
-        </div>
-        <div class="serve-card">
-          <span class="icon-tile it-navy" style="margin-bottom:16px;"><i data-lucide="building-2"></i></span>
-          <h4>Corporate Organisations</h4>
-          <p>Specialist HR projects, audits, and capacity building that complement your in-house team on complex people challenges.</p>
-        </div>
-      </div>
+<!-- 4. CHALLENGES -->
+<section class="h-section alt">
+  <div class="h-wrap">
+    <div class="h-head">
+      <div class="h-eyebrow">Sound Familiar?</div>
+      <h2>Common HR challenges we solve</h2>
     </div>
-  </section>
+    <div class="h-chal">
+      <div class="h-chal-item"><span class="tile"><i data-lucide="clock"></i></span><h4>Hiring takes too long</h4><p>Roles stay open for weeks and the right people slip away.</p></div>
+      <div class="h-chal-item"><span class="tile"><i data-lucide="file-text"></i></span><h4>Policies are inconsistent</h4><p>Rules differ team to team, creating risk and confusion.</p></div>
+      <div class="h-chal-item"><span class="tile"><i data-lucide="layers"></i></span><h4>HR admin is overwhelming</h4><p>Contracts, leave, payroll, and records eat up time you don't have.</p></div>
+      <div class="h-chal-item"><span class="tile"><i data-lucide="trending-up"></i></span><h4>Growing faster than your systems</h4><p>What worked at 5 people is breaking at 25.</p></div>
+    </div>
+  </div>
+</section>
 
-  <!-- WHY VIRTUAL IVY -->
-  <section class="why">
-    <div class="why-inner">
-      <div class="why-text">
-        <div class="label">Why Virtual Ivy</div>
-        <h2>Expert HR guidance. Without the full-time cost.</h2>
-        <div class="divider"></div>
-        <p>We work with business owners, operations leads, NGO managers, and directors who are responsible for people decisions - but aren't necessarily HR specialists. We bring the expertise so you can focus on running your organisation.</p>
-        <div class="why-stats">
-          <div class="stat"><div class="num">10+</div><div class="desc">Years of HR expertise</div></div>
-          <div class="stat"><div class="num">100%</div><div class="desc">Tailored - no templates</div></div>
-          <div class="stat"><div class="num" style="font-size:20px;">End&#8209;to&#8209;end</div><div class="desc">From strategy to execution</div></div>
-          <div class="stat"><div class="num" style="font-size:20px;">Local + Global</div><div class="desc">Local & global HR practices</div></div>
-        </div>
-      </div>
-      <div class="why-pillars">
-        <div class="pillar"><span class="icon-tile it-teal"><i data-lucide="award"></i></span><div><h4>Experienced expertise</h4><p>10+ years across HR, recruitment, and people management - practical, not theoretical.</p></div></div>
-        <div class="pillar"><span class="icon-tile it-amber"><i data-lucide="sparkles"></i></span><div><h4>Tailored solutions</h4><p>No one-size-fits-all. Every solution is built for your specific context.</p></div></div>
-        <div class="pillar"><span class="icon-tile it-coral"><i data-lucide="handshake"></i></span><div><h4>A partner, not just a vendor</h4><p>We work as an extension of your team - invested in your long-term success.</p></div></div>
-        <div class="pillar"><span class="icon-tile it-navy"><i data-lucide="workflow"></i></span><div><h4>End-to-end support</h4><p>From strategy through to execution - we don't just advise, we implement.</p></div></div>
-      </div>
+<!-- 5. PROCESS -->
+<section class="h-section">
+  <div class="h-wrap">
+    <div class="h-head">
+      <div class="h-eyebrow">How We Work</div>
+      <h2>A simple process. Real results.</h2>
     </div>
-  </section>
+    <div class="h-steps">
+      <div class="connector"></div>
+      <div class="h-step"><div class="circle">1</div><h4>Discovery Call</h4><p>We start with a free call to understand your business, your people, and what's getting in the way.</p></div>
+      <div class="h-step"><div class="circle">2</div><h4>HR Assessment</h4><p>We review where you stand &mdash; gaps, risks, and quick wins &mdash; and shape a practical plan.</p></div>
+      <div class="h-step"><div class="circle">3</div><h4>Implementation &amp; Ongoing Support</h4><p>We execute alongside you and stay on as a long-term partner as you grow.</p></div>
+    </div>
+  </div>
+</section>
 
-  <!-- CASE STUDIES -->
-  <section class="testimonials">
-    <div class="test-inner">
-      <div class="label" style="color:var(--teal);">Client Stories</div>
-      <h2 style="color:var(--white);">How we've helped</h2>
-      <div class="divider"></div>
-      <p style="font-size:13px;color:#888;max-width:620px;font-style:italic;">Representative examples of the work we do. We'll feature named client stories here with permission.</p>
-      <div class="case-grid">
-        <div class="case-card">
-          <span class="case-tag">SME · HR Foundations</span>
-          <div class="case-row"><div class="k">Challenge</div><div class="v">A fast-growing business had no employment contracts, policies, or onboarding - just as hiring was about to accelerate.</div></div>
-          <div class="case-row"><div class="k">What we did</div><div class="v">Built a complete HR foundation: compliant contracts, an employee handbook, and a simple onboarding process the team could run themselves.</div></div>
-          <div class="case-row"><div class="k">Result</div><div class="v">People management went from ad-hoc and risky to structured and repeatable - without a full-time HR hire.</div></div>
-        </div>
-        <div class="case-card">
-          <span class="case-tag">Recruitment · Talent Acquisition</span>
-          <div class="case-row"><div class="k">Challenge</div><div class="v">An organisation needed to fill several specialist roles quickly, but lacked the time and process to hire well.</div></div>
-          <div class="case-row"><div class="k">What we did</div><div class="v">Ran the search end-to-end - job design, sourcing, structured interviews, and background checks.</div></div>
-          <div class="case-row"><div class="k">Result</div><div class="v">The right people hired faster than the team could have managed alone, through a fairer, more consistent process.</div></div>
-        </div>
-        <div class="case-card">
-          <span class="case-tag">NGO · Compliance & Policy</span>
-          <div class="case-row"><div class="k">Challenge</div><div class="v">A development organisation needed donor-ready HR policies and confidence that its employment practices were compliant.</div></div>
-          <div class="case-row"><div class="k">What we did</div><div class="v">Conducted an HR audit, refreshed policies, and aligned contracts and statutory practices with current requirements.</div></div>
-          <div class="case-row"><div class="k">Result</div><div class="v">Clear, compliant people systems that stand up to funder scrutiny - and far less day-to-day uncertainty.</div></div>
-        </div>
+<!-- 6. INDUSTRIES -->
+<section class="h-section alt" id="industries">
+  <div class="h-wrap">
+    <div class="h-head">
+      <div class="h-eyebrow">Who We Serve</div>
+      <h2>Who we work with</h2>
+    </div>
+    <div class="h-grid-3 ind">
+      <div class="h-card"><span class="tile"><i data-lucide="rocket"></i></span><h3>Startups</h3></div>
+      <div class="h-card"><span class="tile"><i data-lucide="globe"></i></span><h3>NGOs</h3></div>
+      <div class="h-card"><span class="tile"><i data-lucide="store"></i></span><h3>SMEs</h3></div>
+      <div class="h-card"><span class="tile"><i data-lucide="briefcase"></i></span><h3>Professional Services</h3></div>
+      <div class="h-card"><span class="tile"><i data-lucide="graduation-cap"></i></span><h3>Education</h3></div>
+      <div class="h-card"><span class="tile"><i data-lucide="cpu"></i></span><h3>Technology Companies</h3></div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. TESTIMONIALS -->
+<section class="h-section">
+  <div class="h-wrap">
+    <div class="h-head">
+      <div class="h-eyebrow">Client Stories</div>
+      <h2>What our clients say</h2>
+      <p>Representative examples of our work &mdash; named client stories featured with permission.</p>
+    </div>
+    <div class="h-tgrid">
+      <div class="h-tcard">
+        <div class="h-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>"Virtual Ivy gave us proper HR structure right when we were scaling. Clear, practical, and done without fuss."</blockquote>
+        <div class="h-tperson"><span class="ph">OD</span><div><div class="nm">Operations Director</div><div class="co">Growing SME, Nairobi</div></div></div>
+      </div>
+      <div class="h-tcard">
+        <div class="h-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>"They ran our hiring end to end and we got the right people faster than we could have alone."</blockquote>
+        <div class="h-tperson"><span class="ph">CM</span><div><div class="nm">Country Manager</div><div class="co">Development Organisation</div></div></div>
+      </div>
+      <div class="h-tcard">
+        <div class="h-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <blockquote>"We finally have contracts, policies, and onboarding that just work. HR stopped being a worry."</blockquote>
+        <div class="h-tperson"><span class="ph">F</span><div><div class="nm">Founder</div><div class="co">Early-stage Startup</div></div></div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- CTA BAND -->
-  <section class="cta-band">
-    <h2>Ready to get your HR sorted?</h2>
-    <p>Whether you're building from scratch or fixing what's broken - let's have a conversation. No pressure, no jargon. Just practical HR advice.</p>
-    <div class="cta-btns">
-      <button class="btn btn-white" onclick="location.href='contact.html'">Book a Free Call</button>
-      <a href="https://wa.me/254723828190" class="btn btn-outline" style="color:var(--white);border-color:rgba(255,255,255,.5);"><i data-lucide="message-circle"></i> WhatsApp Us</a>
+<!-- 8. FAQ -->
+<section class="h-section alt">
+  <div class="h-wrap">
+    <div class="h-head"><div class="h-eyebrow">FAQ</div><h2>Questions, answered</h2></div>
+    <div class="faq-inner" style="margin:0 auto;">
+      <details class="faq-item" open><summary>Do small businesses need HR consulting?</summary><div class="faq-a">Absolutely. Small and growing businesses often feel HR pain first &mdash; messy contracts, compliance risk, and no time to fix it. Outsourced HR gives you expert support without the cost of a full-time hire, so you can build proper foundations early.</div></details>
+      <details class="faq-item"><summary>What industries do you support?</summary><div class="faq-a">We work across startups, NGOs and development organisations, SMEs, professional services, education, and technology companies &mdash; any growing organisation that needs reliable, practical people support.</div></details>
+      <details class="faq-item"><summary>Can Virtual Ivy assist with recruitment?</summary><div class="faq-a">Yes. Recruitment is one of our core services. We run hiring end to end &mdash; job design, sourcing and headhunting, screening, structured interviews, and reference and background checks.</div></details>
+      <details class="faq-item"><summary>Do you provide HR compliance support?</summary><div class="faq-a">Yes. We align your contracts, policies and processes with the Employment Act 2007 and statutory requirements, including PAYE, NSSF, SHIF and the Affordable Housing Levy.</div></details>
+      <details class="faq-item"><summary>How do we get started?</summary><div class="faq-a">Book a free discovery call. We'll listen, assess where you stand, and recommend a practical plan tailored to your size and stage &mdash; no pressure, no jargon.</div></details>
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- 10. FINAL CTA -->
+<section class="h-cta">
+  <h2>Ready to get your HR sorted?</h2>
+  <p>Book a free discovery call and let's discuss how Virtual Ivy can support your growth.</p>
+  <a href="contact.html" class="h-btn h-btn-white"><i data-lucide="calendar-check"></i> Book a Free Call</a>
+</section>
+
 </main>
 
 <footer>
@@ -468,7 +378,7 @@
 <div class="sticky-cta" id="stickyCta">
   <p>Ready to get your HR sorted? Your first consultation is free.</p>
   <div class="sc-btns">
-    <button class="sc-btn" onclick="location.href='contact.html'">Book a Free Consultation</button>
+    <button class="sc-btn" onclick="location.href='contact.html'">Book a Free Call</button>
     <a href="https://wa.me/254723828190" class="sc-btn alt" target="_blank" rel="noopener"><i data-lucide="message-circle"></i> WhatsApp</a>
   </div>
   <button class="sc-close" onclick="closeSticky()" aria-label="Dismiss">×</button>
