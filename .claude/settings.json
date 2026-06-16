@@ -6,7 +6,8 @@
       "Bash(curl -s -o /dev/null -w \"/hr-consulting-kenya -> %{http_code}\\\\n\" --max-time 20 -A Mozilla \"https://virtualivy.co.ke/hr-consulting-kenya\")",
       "Bash(curl -sI --max-time 20 -A Mozilla \"https://virtualivy.co.ke/\")",
       "Bash(python -c ' *)",
-      "Bash(git commit -q -m 'Hero imagery: use existing optimized photos on all banners *)"
+      "Bash(git commit -q -m 'Hero imagery: use existing optimized photos on all banners *)",
+      "Bash(git commit -q -m 'Redesign homepage hero to match inspiration \\(full-bleed overlay\\) *)"
     ]
   }
 }
