@@ -1,7 +1,12 @@
 {
   "permissions": {
     "allow": [
-      "Bash(git commit -q -m 'Hero imagery: homepage keeps boardroom photo; subpage banners use Nairobi skyline *)"
+      "Bash(git commit -q -m 'Hero imagery: homepage keeps boardroom photo; subpage banners use Nairobi skyline *)",
+      "Bash(curl -s --max-time 20 -A Mozilla \"https://virtualivy.co.ke/\")",
+      "Bash(curl -s -o /dev/null -w \"/hr-consulting-kenya -> %{http_code}\\\\n\" --max-time 20 -A Mozilla \"https://virtualivy.co.ke/hr-consulting-kenya\")",
+      "Bash(curl -sI --max-time 20 -A Mozilla \"https://virtualivy.co.ke/\")",
+      "Bash(python -c ' *)",
+      "Bash(git commit -q -m 'Hero imagery: use existing optimized photos on all banners *)"
     ]
   }
 }
