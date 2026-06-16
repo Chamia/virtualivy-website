@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git commit -q -m 'Hero imagery: homepage keeps boardroom photo; subpage banners use Nairobi skyline *)"
+    ]
+  }
+}
