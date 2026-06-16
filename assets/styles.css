@@ -774,3 +774,14 @@ html.dark .h-hero{background:linear-gradient(100deg, rgba(7,11,18,.98) 0%, rgba(
   .h-hero-btns{flex-direction:column;align-items:stretch;}
   .h-hero-btns .h-btn{width:100%;justify-content:center;}
 }
+
+/* ===================== BREADCRUMBS ===================== */
+.crumbs{background:var(--grey);border-bottom:1px solid #eef2f7;font-size:13px;}
+.crumbs .h-wrap{padding:11px 24px;display:flex;flex-wrap:wrap;align-items:center;}
+.crumbs a{color:var(--mid);text-decoration:none;transition:.2s;}
+.crumbs a:hover{color:var(--teal);}
+.crumbs .sep{color:#cbd5e1;margin:0 9px;}
+.crumbs .cur{color:var(--navy);font-weight:600;}
+html.dark .crumbs{background:#0E1726;border-bottom-color:rgba(255,255,255,.07);}
+html.dark .crumbs .cur{color:#F1F5F9;}
+html.dark .crumbs .sep{color:#475569;}
