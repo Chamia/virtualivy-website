@@ -114,6 +114,7 @@
 </script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 <nav>
   <div class="nav-inner">
     <a class="nav-logo" href="index.html"><img src="assets/logo.png" alt="Virtual Ivy" decoding="async" class="nav-logo-img logo-light"><img src="assets/logo-white.png" alt="Virtual Ivy" decoding="async" class="nav-logo-img logo-dark"></a>
@@ -161,7 +162,7 @@
   </div>
 </nav>
 
-<main>
+<main id="main">
 <nav class="crumbs" aria-label="Breadcrumb"><div class="h-wrap"><a href="/">Home</a><span class="sep">/</span><span class="cur">Insights</span></div></nav>
 <section class="page-hero">
     <div class="label">Insights</div>
@@ -292,8 +293,8 @@
           <form class="lead-form" id="leadForm" onsubmit="submitLead(event)">
             <input type="hidden" name="_subject" value="Checklist download, Virtual Ivy">
             <input type="hidden" name="form_type" value="Lead magnet: Kenya HR Compliance Checklist">
-            <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" placeholder="Your work email" required>
+            <input type="text" name="name" placeholder="Your name" aria-label="Your name" autocomplete="name" required>
+            <input type="email" name="email" placeholder="Your work email" aria-label="Your work email" autocomplete="email" required>
             <button type="submit" class="btn btn-primary form-submit">Send me the checklist →</button>
             <a href="assets/kenya-hr-compliance-checklist.html" target="_blank" rel="noopener" style="text-align:center;font-size:12px;color:#888;">or preview it now</a>
             <div class="lead-success" id="leadSuccess">✅ Thanks! Your checklist is opening in a new tab.</div>

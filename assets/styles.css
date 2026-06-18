@@ -434,11 +434,8 @@ footer{background:var(--black);padding:72px 5% 28px;}
 .h-btn-white{background:#fff;color:var(--teal);}
 .h-btn-white:hover{transform:translateY(-2px);}
 
-/* HERO */
-.h-hero{padding:72px 0 88px;background:linear-gradient(180deg,#fff 0%,var(--grey) 100%);}
+/* HERO (full-bleed overlay — see "HOMEPAGE HERO" block below for the active rules) */
 .h-hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center;}
-.h-hero h1{font-size:clamp(32px,4.4vw,54px);line-height:1.12;color:var(--navy);margin-bottom:22px;letter-spacing:-.5px;}
-.h-hero p.lead{font-size:18px;line-height:1.7;color:var(--mid);margin-bottom:34px;max-width:540px;}
 .h-hero-btns{display:flex;flex-wrap:wrap;gap:14px;}
 .h-hero-visual{position:relative;}
 .h-hero-img{width:100%;height:520px;object-fit:cover;border-radius:24px;box-shadow:0 30px 70px rgba(15,23,42,.18);}
@@ -575,7 +572,6 @@ html.dark .h-section{background:#0B1220;}
 html.dark .h-section.alt{background:#0E1726;}
 html.dark .h-section.tint{background:#0C1A26;}
 html.dark .h-section.tint .h-step .circle{border-color:#0C1A26;}
-html.dark .h-hero{background:linear-gradient(180deg,#0B1220,#0E1726);}
 html.dark .pain,html.dark .why,html.dark .services-overview,html.dark .serv-section,html.dark .credentials,html.dark .insights-section,html.dark .faq-section,html.dark .contact-section,html.dark .memberships,html.dark .about-text{background:#0B1220;}
 /* surfaces / cards */
 html.dark .h-card,html.dark .h-tcard,html.dark .faq-item,html.dark .sov-card,html.dark .contact-form,html.dark .cred-item,html.dark .insight-card,html.dark .pain-item,html.dark .serv-detail,html.dark .contact-method,html.dark .mem-badge,html.dark .stat{background:#131C2B;border-color:rgba(255,255,255,.08);box-shadow:none;}
@@ -796,3 +792,22 @@ html.dark .crumbs .sep{color:#475569;}
 html.dark .author-box{background:#102230;border-color:rgba(255,255,255,.08);}
 html.dark .author-box .ab-body strong{color:#F1F5F9;}
 html.dark .author-box .ab-body a{color:var(--teal);}
+
+/* ===================== ACCESSIBILITY POLISH ===================== */
+/* Skip-to-content link: visually hidden until keyboard-focused */
+.skip-link{position:absolute;left:-9999px;top:0;z-index:100;background:var(--teal);color:#fff;font-weight:700;font-size:14px;padding:12px 20px;border-radius:0 0 8px 0;text-decoration:none;}
+.skip-link:focus{left:0;}
+/* Prevent iOS auto-zoom on focus: inputs must be >=16px on mobile */
+@media(max-width:760px){
+  .form-group input,.form-group select,.form-group textarea,.lead-form input{font-size:16px;}
+}
+/* Touch targets >= ~44px on touch devices */
+@media(max-width:768px){
+  .nav-links a.navlink,.nav-links .dd-toggle{padding:12px 14px;}
+  .sticky-cta .sc-btn{padding:12px 18px;}
+  .mob-nav a{padding:13px 0;}
+}
+/* Respect reduced-motion for hover lifts too, not just scroll reveals */
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important;}
+}
