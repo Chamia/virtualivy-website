@@ -1,7 +1,7 @@
 # Virtual Ivy — SEO Action Playbook
 *(Your click-by-click checklist + ready-to-send outreach templates. Do these in order.)*
 
-The website build is done (30 pages, schema, sitemap, clean URLs). Rankings now come from **indexing → Google Business Profile → reviews → backlinks → time**. This file is everything you need to do that.
+The website build is done (35 pages, schema incl. FAQ/LocalBusiness, sitemap, clean URLs, crawlers unblocked at Cloudflare, IndexNow live). Rankings now come from **indexing → Google Business Profile → reviews → backlinks → time**. This file is everything you need to do that.
 
 ---
 
@@ -53,10 +53,46 @@ Go to **business.google.com → "Manage now"**.
 
 ---
 
+## ⭐ PRIORITY: Your first 10 links — tool-validated (do these THIS week)
+
+**Why this works:** Semrush's Top-10 benchmark (Jun 2026) showed the Kenya pages ranking for *"hr consulting kenya"* have an average of **just ~2 referring domains**, and *"hr compliance kenya"* has **0**. You currently have **1**. So a handful of real, relevant links genuinely moves you into contention for those terms. (Note: *"hr consulting nairobi"* is harder — top-10 average is ~23 domains — so treat that as a longer game.)
+
+**THE NAP — copy-paste this EXACTLY the same everywhere (Name, Address, Phone). Consistency is what counts:**
+```
+Name:     Virtual Ivy
+Address:  Nairobi, Kenya
+Phone:    +254 723 828 190
+Email:    hello@virtualivy.net
+Website:  https://virtualivy.co.ke
+Category: Human Resources Consulting
+Desc:     HR consulting, recruitment and HR outsourcing for startups, SMEs and NGOs in Kenya. Labour-law compliance, people operations and HR strategy. Free consultation.
+```
+
+Work down this list. Tick each off:
+
+| # | Where | Link | Notes |
+|---|-------|------|-------|
+| 1 | **Google Business Profile** | business.google.com | #1 priority — service-area business, Nairobi + Kenya. (Full steps in Part 2 above.) |
+| 2 | **goafricaonline.com** | goafricaonline.com (add a business) | Pan-African directory — Semrush flagged it as a domain your rivals get links from. Free listing. |
+| 3 | **advance-africa.com** | advance-africa.com | Africa opportunities/services site — also flagged by Semrush. |
+| 4 | **BusinessList.co.ke** | businesslist.co.ke | Top Kenyan directory. Free listing. |
+| 5 | **YellowPagesKenya.com** | yellowpageskenya.com | Free listing. |
+| 6 | **VConnect / Cylex Kenya** | cylex.co.ke | Free listing. |
+| 7 | **Bing Places** | bingplaces.com | Import from Google Business Profile in 2 clicks. |
+| 8 | **IHRM Kenya member listing** | ihrm.or.ke | If you're a member — highest-relevance industry link. (Needs your membership.) |
+| 9 | **LinkedIn company page** | already live | Make sure Website field = https://virtualivy.co.ke (a real link). |
+| 10 | **KEPSA / a startup hub dir** | kepsa.or.ke, iHub, Nairobi Garage | One relevant community listing. |
+
+**Rule:** never vary the NAP. "Virtual Ivy, Nairobi" everywhere — not "Virtual Ivy Ltd" on one and "Virtual Ivy HR" on another. Inconsistent NAP cancels out the benefit.
+
+After you've done 1–7 (an afternoon's work), you'll likely have ~6–8 referring domains — past the benchmark for *"hr consulting kenya"* and *"hr compliance kenya"*.
+
+---
+
 ## PART 3 — First 100 backlinks (work top to bottom)
 
 ### A. Directories & citations (do first — easy, ~20 links, keep NAP identical everywhere)
-BusinessList.co.ke · YellowPagesKenya.com · VConnect Kenya · Yelwa · KenyaBuzz · Mtaani · Brabion · Cylex Kenya · Google Business Profile · Bing Places · your LinkedIn, Facebook, Instagram.
+BusinessList.co.ke · YellowPagesKenya.com · VConnect Kenya · Yelwa · KenyaBuzz · Mtaani · Brabion · Cylex Kenya · goafricaonline.com · advance-africa.com · Google Business Profile · Bing Places · your LinkedIn, Facebook, Instagram.
 **NAP to use everywhere (must be identical):**
 `Virtual Ivy · Nairobi, Kenya · +254 723 828 190 · hello@virtualivy.net · https://virtualivy.co.ke`
 
