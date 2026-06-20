@@ -59,7 +59,7 @@ Go to **business.google.com → "Manage now"**.
 
 **THE NAP — copy-paste this EXACTLY the same everywhere (Name, Address, Phone). Consistency is what counts:**
 ```
-Name:     Virtual Ivy
+Name:     Virtual Ivy Consulting
 Address:  Nairobi, Kenya
 Phone:    +254 723 828 190
 Email:    hello@virtualivy.net
