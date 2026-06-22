@@ -37,14 +37,14 @@ The website build is done (35 pages, schema incl. FAQ/LocalBusiness, sitemap, cl
 
 Go to **business.google.com → "Manage now"**.
 
-1. **Business name:** Virtual Ivy Consulting
+1. **Business name:** Virtual Ivy Consultancy
 2. **Category (primary):** *Human Resources Consulting*
    **Secondary:** *Recruiter · Employment Agency · Business Management Consultant*
 3. **Location:** If no walk-in office → choose **"I deliver goods and services to my customers"** (service-area business) → service area: **Nairobi + Kenya**.
 4. **Contact:** Phone `+254 723 828 190` · Website `https://virtualivy.co.ke`
 5. **Hours:** Mon–Fri 08:30–17:00; Sat by appointment.
 6. **Description** (paste this — client-focused, matches the website positioning, ~720 chars):
-   > Virtual Ivy Consulting is an HR consulting and recruitment firm in Nairobi, Kenya. We help startups, SMEs, NGOs and growing companies build compliant, high-performing teams, without the cost of a full in-house HR department. Our services include HR consulting and advisory, recruitment and talent acquisition, HR outsourcing and people operations, HR compliance and Kenyan labour-law support (PAYE, NSSF, SHIF and the Affordable Housing Levy), HR policies and contracts, performance management, and HR strategy. With 10+ years' experience and a practical, partnership-driven approach, we tailor every solution to your size and stage, no generic templates. Serving Nairobi and all of Kenya. Book a free, no-obligation consultation today.
+   > Virtual Ivy Consultancy is an HR consulting and recruitment firm in Nairobi, Kenya. We help startups, SMEs, NGOs and growing companies build compliant, high-performing teams, without the cost of a full in-house HR department. Our services include HR consulting and advisory, recruitment and talent acquisition, HR outsourcing and people operations, HR compliance and Kenyan labour-law support (PAYE, NSSF, SHIF and the Affordable Housing Levy), HR policies and contracts, performance management, and HR strategy. With 10+ years' experience and a practical, partnership-driven approach, we tailor every solution to your size and stage, no generic templates. Serving Nairobi and all of Kenya. Book a free, no-obligation consultation today.
 7. **Services:** add each as its own item with a one-line description — HR Consulting, Recruitment Services, Talent Acquisition, HR Outsourcing, HR Compliance, Labour Law Compliance, People Operations, HR Strategy, Employee Relations, Organizational Development, Startup HR, NGO HR.
 8. **Photos:** logo (square), a cover image, + 5–10 photos (office/team/work). Listings with photos get far more clicks.
 9. **Verify** (postcard, phone, or email — follow Google's prompt).
@@ -59,7 +59,7 @@ Go to **business.google.com → "Manage now"**.
 
 **THE NAP — copy-paste this EXACTLY the same everywhere (Name, Address, Phone). Consistency is what counts:**
 ```
-Name:     Virtual Ivy Consulting
+Name:     Virtual Ivy Consultancy
 Address:  Nairobi, Kenya
 Phone:    +254 723 828 190
 Email:    hello@virtualivy.net
@@ -157,31 +157,31 @@ Just submit the NAP block above + the GBP description. Done.
 > Goal: get your first **3–5 Google reviews** and **2–3 case studies**. Send these to real people you've actually done work for. Personalise the [brackets].
 
 ### 4.1 — Review request · WhatsApp/SMS (short)
-> Hi [Name], it was a pleasure working with you on [the CVs / your contracts / your hiring / the HR setup]. If you have 60 seconds, a short Google review would mean a lot and helps other businesses find Virtual Ivy Consulting: [PASTE GBP REVIEW LINK]. Thank you! — [Your name], Virtual Ivy Consulting
+> Hi [Name], it was a pleasure working with you on [the CVs / your contracts / your hiring / the HR setup]. If you have 60 seconds, a short Google review would mean a lot and helps other businesses find Virtual Ivy Consultancy: [PASTE GBP REVIEW LINK]. Thank you! — [Your name], Virtual Ivy Consultancy
 
 ### 4.2 — Review request · Email (warmer)
 > **Subject:** A quick favour 🙏
 >
 > Hi [Name],
 >
-> I really enjoyed working with you on [project]. I'm building Virtual Ivy Consulting's presence online, and honest reviews from clients like you make a huge difference for a growing firm.
+> I really enjoyed working with you on [project]. I'm building Virtual Ivy Consultancy's presence online, and honest reviews from clients like you make a huge difference for a growing firm.
 >
 > If you were happy with the work, would you mind leaving a short Google review? It takes under a minute: [PASTE GBP REVIEW LINK]
 >
 > Even a line or two on what we helped with and how it went is perfect. Thank you so much.
 >
 > Warm regards,
-> [Your name] · Virtual Ivy Consulting · +254 723 828 190
+> [Your name] · Virtual Ivy Consultancy · +254 723 828 190
 
 ### 4.3 — Testimonial request (if they'd rather not post publicly)
-> Hi [Name], would you be comfortable with me using a short quote about our work together on the Virtual Ivy Consulting website? Happy to write a draft for you to approve, and I'll only use your name/title with your permission. Thank you!
+> Hi [Name], would you be comfortable with me using a short quote about our work together on the Virtual Ivy Consultancy website? Happy to write a draft for you to approve, and I'll only use your name/title with your permission. Thank you!
 
 ### 4.4 — Pilot offer · to 3 Nairobi businesses (generates reviews + case studies + leads)
 > **Subject:** Free HR health-check for [Company] (Nairobi)
 >
 > Hi [Name],
 >
-> I run Virtual Ivy Consulting, an HR consulting and recruitment firm here in Nairobi. We help startups, SMEs and NGOs stay compliant with Kenyan labour law and build solid HR foundations.
+> I run Virtual Ivy Consultancy, an HR consulting and recruitment firm here in Nairobi. We help startups, SMEs and NGOs stay compliant with Kenyan labour law and build solid HR foundations.
 >
 > I'm offering a **free HR health-check** to a few Nairobi businesses this month — a focused review of your contracts, policies and statutory compliance (PAYE, NSSF, SHIF, Housing Levy), with a short, prioritised action list. No cost, no obligation.
 >
@@ -190,7 +190,7 @@ Just submit the NAP block above + the GBP description. Done.
 > Would [day] or [day] this week suit a 20-minute call?
 >
 > Best,
-> [Your name] · Virtual Ivy Consulting · virtualivy.co.ke · +254 723 828 190
+> [Your name] · Virtual Ivy Consultancy · virtualivy.co.ke · +254 723 828 190
 
 ### 4.5 — After the pilot (convert to review)
 > Hi [Name], glad the HR health-check was useful! As mentioned, a short Google review would really help us: [PASTE GBP REVIEW LINK]. And if you'd like us to action any of the gaps we found, just say the word — happy to scope it. Thanks again!
