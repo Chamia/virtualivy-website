@@ -78,11 +78,37 @@ applyThemeIcon(document.documentElement.classList.contains('dark') ? 'dark' : 'l
 (function(){
   if(!('IntersectionObserver' in window))return;
   if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-  var els=document.querySelectorAll('.h-head,.h-card,.h-chal-item,.h-step,.h-tcard,.h-benefit,.h-trust-inner');
+  var els=document.querySelectorAll('.h-head,.h-card,.h-chal-item,.h-step,.h-tcard,.h-benefit,.h-trust-inner,.h-trustedby');
   if(!els.length)return;
   els.forEach(function(el){el.classList.add('reveal');});
   var io=new IntersectionObserver(function(entries){
     entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
   },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
   els.forEach(function(el){io.observe(el);});
+})();
+
+// Animated count-up on stat numbers (respects reduced-motion)
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+  var nums=document.querySelectorAll('.h-stat .num');
+  if(!nums.length)return;
+  var io=new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(!e.isIntersecting)return;
+      var el=e.target, tn=el.firstChild;
+      var target=parseInt(((tn&&tn.textContent)||'').replace(/\D/g,''),10);
+      if(isNaN(target)){io.unobserve(el);return;}
+      var dur=1100,start=null;
+      function step(ts){
+        if(start===null)start=ts;
+        var p=Math.min((ts-start)/dur,1);
+        tn.textContent=Math.round((1-Math.pow(1-p,3))*target);
+        if(p<1){requestAnimationFrame(step);}else{tn.textContent=target;}
+      }
+      requestAnimationFrame(step);
+      io.unobserve(el);
+    });
+  },{threshold:0.5});
+  nums.forEach(function(n){io.observe(n);});
 })();

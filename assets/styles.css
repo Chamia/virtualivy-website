@@ -811,3 +811,13 @@ html.dark .author-box .ab-body a{color:var(--teal);}
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important;}
 }
+
+/* ===================== TRUSTED-BY STRIP ===================== */
+.h-trustedby{margin-top:30px;padding-top:26px;border-top:1px solid #eef2f7;text-align:center;}
+.tb-label{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mid);margin-bottom:16px;}
+.tb-row{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:14px 30px;}
+.tb-chip{font-family:'Libre Baskerville',serif;font-size:clamp(15px,2vw,20px);color:var(--navy);opacity:.72;}
+.tb-logo{height:34px;width:auto;opacity:.7;filter:grayscale(1);transition:.25s;}
+.tb-logo:hover{opacity:1;filter:none;}
+html.dark .h-trustedby{border-top-color:rgba(255,255,255,.08);}
+html.dark .tb-chip{color:#E2E8F0;}
