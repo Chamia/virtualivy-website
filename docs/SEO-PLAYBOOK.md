@@ -9,7 +9,7 @@ The website build is done (35 pages, schema incl. FAQ/LocalBusiness, sitemap, cl
 
 > Use the **extensionless** URLs (e.g. `https://virtualivy.co.ke/hr-consulting-kenya`), not the `.html` versions — those are the real/canonical URLs now.
 
-1. **Re-submit the sitemap** (it now has ~31 URLs; GSC last read only 9).
+1. **Re-submit the sitemap** (it now has 36 URLs).
    - GSC → **Sitemaps** → type `sitemap.xml` → **Submit**. (Status already "Success" — this just refreshes it.)
 
 2. **Request indexing** for your priority pages (one at a time):
@@ -37,14 +37,14 @@ The website build is done (35 pages, schema incl. FAQ/LocalBusiness, sitemap, cl
 
 Go to **business.google.com → "Manage now"**.
 
-1. **Business name:** Virtual Ivy
+1. **Business name:** Virtual Ivy Consulting
 2. **Category (primary):** *Human Resources Consulting*
    **Secondary:** *Recruiter · Employment Agency · Business Management Consultant*
 3. **Location:** If no walk-in office → choose **"I deliver goods and services to my customers"** (service-area business) → service area: **Nairobi + Kenya**.
 4. **Contact:** Phone `+254 723 828 190` · Website `https://virtualivy.co.ke`
 5. **Hours:** Mon–Fri 08:30–17:00; Sat by appointment.
-6. **Description** (paste this, it's the 750-char SEO version):
-   > Virtual Ivy provides professional HR consulting and career services in Nairobi, Kenya. For job seekers: expert CV/resume writing, ATS-friendly cover letters, interview coaching with mock interviews, and LinkedIn profile optimisation to help you get noticed and hired. For small businesses and startups: outsourced HR support, including recruitment and talent sourcing, onboarding, HR policies and compliance, performance management (KPIs and reviews), and payroll management aligned to Kenyan labour law. With 10+ years' experience, we tailor every CV, strategy and HR solution to you, no generic templates, with packages for every budget, from students to executives and growing teams. Book a free consultation today.
+6. **Description** (paste this — client-focused, matches the website positioning, ~720 chars):
+   > Virtual Ivy Consulting is an HR consulting and recruitment firm in Nairobi, Kenya. We help startups, SMEs, NGOs and growing companies build compliant, high-performing teams, without the cost of a full in-house HR department. Our services include HR consulting and advisory, recruitment and talent acquisition, HR outsourcing and people operations, HR compliance and Kenyan labour-law support (PAYE, NSSF, SHIF and the Affordable Housing Levy), HR policies and contracts, performance management, and HR strategy. With 10+ years' experience and a practical, partnership-driven approach, we tailor every solution to your size and stage, no generic templates. Serving Nairobi and all of Kenya. Book a free, no-obligation consultation today.
 7. **Services:** add each as its own item with a one-line description — HR Consulting, Recruitment Services, Talent Acquisition, HR Outsourcing, HR Compliance, Labour Law Compliance, People Operations, HR Strategy, Employee Relations, Organizational Development, Startup HR, NGO HR.
 8. **Photos:** logo (square), a cover image, + 5–10 photos (office/team/work). Listings with photos get far more clicks.
 9. **Verify** (postcard, phone, or email — follow Google's prompt).
