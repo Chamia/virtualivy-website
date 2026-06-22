@@ -149,3 +149,50 @@ Just submit the NAP block above + the GBP description. Done.
 - **Competitive terms ("HR consulting Kenya"):** 3–12 months, driven by backlinks + content + time.
 
 **Weekly habit:** 1 new blog article + 3–5 backlink outreach emails + 2 review requests + 1 GBP post. Consistency wins.
+
+---
+
+## PART 4 — Outreach messages (reviews + pilot clients)
+
+> Goal: get your first **3–5 Google reviews** and **2–3 case studies**. Send these to real people you've actually done work for. Personalise the [brackets].
+
+### 4.1 — Review request · WhatsApp/SMS (short)
+> Hi [Name], it was a pleasure working with you on [the CVs / your contracts / your hiring / the HR setup]. If you have 60 seconds, a short Google review would mean a lot and helps other businesses find Virtual Ivy Consulting: [PASTE GBP REVIEW LINK]. Thank you! — [Your name], Virtual Ivy Consulting
+
+### 4.2 — Review request · Email (warmer)
+> **Subject:** A quick favour 🙏
+>
+> Hi [Name],
+>
+> I really enjoyed working with you on [project]. I'm building Virtual Ivy Consulting's presence online, and honest reviews from clients like you make a huge difference for a growing firm.
+>
+> If you were happy with the work, would you mind leaving a short Google review? It takes under a minute: [PASTE GBP REVIEW LINK]
+>
+> Even a line or two on what we helped with and how it went is perfect. Thank you so much.
+>
+> Warm regards,
+> [Your name] · Virtual Ivy Consulting · +254 723 828 190
+
+### 4.3 — Testimonial request (if they'd rather not post publicly)
+> Hi [Name], would you be comfortable with me using a short quote about our work together on the Virtual Ivy Consulting website? Happy to write a draft for you to approve, and I'll only use your name/title with your permission. Thank you!
+
+### 4.4 — Pilot offer · to 3 Nairobi businesses (generates reviews + case studies + leads)
+> **Subject:** Free HR health-check for [Company] (Nairobi)
+>
+> Hi [Name],
+>
+> I run Virtual Ivy Consulting, an HR consulting and recruitment firm here in Nairobi. We help startups, SMEs and NGOs stay compliant with Kenyan labour law and build solid HR foundations.
+>
+> I'm offering a **free HR health-check** to a few Nairobi businesses this month — a focused review of your contracts, policies and statutory compliance (PAYE, NSSF, SHIF, Housing Levy), with a short, prioritised action list. No cost, no obligation.
+>
+> In return, if you find it useful, I'd simply ask for a short Google review and your permission to mention the work (anonymously if you prefer) as a case study.
+>
+> Would [day] or [day] this week suit a 20-minute call?
+>
+> Best,
+> [Your name] · Virtual Ivy Consulting · virtualivy.co.ke · +254 723 828 190
+
+### 4.5 — After the pilot (convert to review)
+> Hi [Name], glad the HR health-check was useful! As mentioned, a short Google review would really help us: [PASTE GBP REVIEW LINK]. And if you'd like us to action any of the gaps we found, just say the word — happy to scope it. Thanks again!
+
+**Where to get your GBP review link:** Google Business Profile → **"Ask for reviews"** → copy the short link → paste it into [PASTE GBP REVIEW LINK] above.
