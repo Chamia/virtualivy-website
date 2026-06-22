@@ -94,7 +94,7 @@ After you've done 1–7 (an afternoon's work), you'll likely have ~6–8 referri
 ### A. Directories & citations (do first — easy, ~20 links, keep NAP identical everywhere)
 BusinessList.co.ke · YellowPagesKenya.com · VConnect Kenya · Yelwa · KenyaBuzz · Mtaani · Brabion · Cylex Kenya · goafricaonline.com · advance-africa.com · Google Business Profile · Bing Places · your LinkedIn, Facebook, Instagram.
 **NAP to use everywhere (must be identical):**
-`Virtual Ivy · Nairobi, Kenya · +254 723 828 190 · hello@virtualivy.net · https://virtualivy.co.ke`
+`Virtual Ivy Consultancy · Nairobi, Kenya · +254 723 828 190 · hello@virtualivy.net · https://virtualivy.co.ke`
 
 ### B. Industry / community
 IHRM Kenya (member listing) · KEPSA · startup hubs (iHub, Nairobi Garage, Antler/MEST alumni dirs) · NGO directories (Devex, NGO Board).
