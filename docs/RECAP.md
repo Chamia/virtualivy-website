@@ -15,12 +15,12 @@ The website is **technically excellent and competitive** — validated against 4
 - **Canonical name:** Virtual Ivy Consultancy (matches LinkedIn). Short form "Virtual Ivy" is an alternate.
 - **NAP:** `Virtual Ivy Consultancy · Nairobi, Kenya · +254 723 828 190 · hello@virtualivy.net · https://virtualivy.co.ke`
 - **Positioning:** B2B / client-focused HR consulting, recruitment & outsourcing for startups, SMEs, NGOs, corporates. NOT job-seeker/CV services. Never fabricate stats/testimonials/reviews.
-- **Stack:** static HTML/CSS/JS · GitHub Pages + Cloudflare · clean (extensionless) URLs · 38 pages.
+- **Stack:** static HTML/CSS/JS · GitHub Pages + Cloudflare · clean (extensionless) URLs · 41 pages.
 
 ---
 
 ## DONE — on-site (all live & pushed)
-- **38 pages:** homepage, 12 service pages, 2 Nairobi location pages, 2 industry pages, 10 articles + 1 pillar guide, about/services/insights/faq/contact, legal.
+- **41 pages:** homepage, 12 service pages, 2 Nairobi location pages, 2 industry pages, 10 articles + 1 pillar guide, about/services/insights/faq/contact, legal.
 - **Titles/meta:** unique, keyword-front-loaded, within length limits; homepage exact-match "HR Consulting in Kenya". Service-page metas carry concrete statutory specifics (Employment Act 2007, PAYE/NSSF/SHIF).
 - **Schema:** Organization + **LocalBusiness** (ProfessionalService), WebSite, Service, **FAQPage** (homepage + 11 service pages), Article, BreadcrumbList. All JSON validated.
 - **Content depth:** compliance & Nairobi pages expanded to ~competitive length; semantic terms added per Semrush; internal links + visible breadcrumbs sitewide.

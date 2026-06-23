@@ -22,9 +22,9 @@ Authority blogs work on three levers at once:
 | NSSF rates 2026 | Limits rose Feb 2026; high search; competitors slow to update | ✅ published |
 | Probation periods | Common employer question; under-covered well | ✅ published |
 | Disability employment quota (5%) | New (2025); almost no HR-firm content; authority play | ✅ published |
-| Minimum wage in Kenya 2026 | High search; new wage order May 2026 | ☐ next |
-| SHIF for employers (deep dive) | Replaced NHIF; ongoing confusion | ☐ |
-| Affordable Housing Levy guide | 1.5%+1.5%, penalties; high search | ☐ |
+| Minimum wage in Kenya 2026 | High search; new wage order May 2026 | ✅ published |
+| SHIF for employers (deep dive) | Replaced NHIF; ongoing confusion | ✅ published |
+| Affordable Housing Levy guide | 1.5%+1.5%, penalties; high search | ✅ published |
 | Annual & sick leave entitlements | Common question; we only cover maternity/paternity | ☐ |
 | Workplace health & safety (OSHA) for SMEs | Legal duty; little SME-friendly content | ☐ |
 | Performance management in Kenya | Service-aligned; mid funnel | ☐ |
