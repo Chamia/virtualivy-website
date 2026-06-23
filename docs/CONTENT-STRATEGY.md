@@ -25,10 +25,10 @@ Authority blogs work on three levers at once:
 | Minimum wage in Kenya 2026 | High search; new wage order May 2026 | ✅ published |
 | SHIF for employers (deep dive) | Replaced NHIF; ongoing confusion | ✅ published |
 | Affordable Housing Levy guide | 1.5%+1.5%, penalties; high search | ✅ published |
-| Annual & sick leave entitlements | Common question; we only cover maternity/paternity | ☐ |
-| Workplace health & safety (OSHA) for SMEs | Legal duty; little SME-friendly content | ☐ |
-| Performance management in Kenya | Service-aligned; mid funnel | ☐ |
-| Onboarding process that works | Already teased "coming soon" on Insights | ☐ |
+| Annual & sick leave entitlements | Common question; we only cover maternity/paternity | ✅ published |
+| Workplace health & safety (OSHA) for SMEs | Legal duty; little SME-friendly content | ✅ published |
+| Performance management in Kenya | Service-aligned; mid funnel | ✅ published |
+| Onboarding process that works | Already teased "coming soon" on Insights | ✅ published |
 | Employee handbook template guide | High intent; links to policies service | ☐ |
 | HR for remote/hybrid teams in Kenya | Growing; differentiator | ☐ |
 
