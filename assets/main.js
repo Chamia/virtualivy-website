@@ -80,7 +80,15 @@ applyThemeIcon(document.documentElement.classList.contains('dark') ? 'dark' : 'l
   if(window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches)return;
   var els=document.querySelectorAll('.h-head,.h-card,.h-chal-item,.h-step,.h-tcard,.h-benefit,.h-trust-inner,.h-trustedby');
   if(!els.length)return;
-  els.forEach(function(el){el.classList.add('reveal');});
+  els.forEach(function(el){
+    el.classList.add('reveal');
+    // Stagger siblings within the same container for a premium cascade
+    try{
+      var sibs=Array.prototype.filter.call(el.parentNode.children,function(c){return c.classList&&c.classList.contains('reveal');});
+      var i=sibs.indexOf(el);
+      if(i>0)el.style.transitionDelay=Math.min(i*90,450)+'ms';
+    }catch(e){}
+  });
   var io=new IntersectionObserver(function(entries){
     entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});
   },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});

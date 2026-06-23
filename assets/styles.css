@@ -841,3 +841,71 @@ html.dark .gl-item dd a{color:var(--teal);}
 .related-insights a{color:var(--teal-dark);font-weight:600;}
 html.dark .related-insights{background:#102230;border-color:rgba(255,255,255,.08);}
 html.dark .related-insights a{color:var(--teal);}
+
+/* ============================================================
+   PREMIUM DESIGN LAYER  ·  light-premium (Stripe / Ramp / Mercury grade)
+   Loaded last → refines tokens, type, spacing, components, motion site-wide.
+   ============================================================ */
+:root{
+  --bg:#FFFFFF;
+  --grey:#F6F8FB;                 /* softer section background */
+  --navy:#0B1220; --black:#0B1220;/* deeper, richer near-black */
+  --mid:#586172;                  /* refined muted text (better contrast) */
+  --border:#E9ECF1;               /* hairline soft border */
+  --teal:#1BB5D8; --teal-dark:#1599B8; --teal-light:#E7F6FB;
+  --ease:cubic-bezier(.22,1,.36,1);
+  --shadow-sm:0 1px 2px rgba(11,18,32,.04), 0 2px 6px rgba(11,18,32,.05);
+  --shadow:0 6px 28px rgba(11,18,32,.07);
+  --shadow-lg:0 28px 64px rgba(11,18,32,.12);
+}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;letter-spacing:-.005em;}
+/* Tight, bold sans display (premium SaaS) */
+h1,h2,h3,h4,h5{font-family:'Montserrat',sans-serif;letter-spacing:-.022em;}
+h1{font-weight:800;letter-spacing:-.035em;}
+h2{font-weight:800;letter-spacing:-.03em;}
+h3{font-weight:700;}
+.h-stat .num,.gl-item dt,.h-logo,.mob-links a{font-family:'Montserrat',sans-serif;}
+
+/* Vertical rhythm + whitespace */
+.h-section{padding:116px 0;}
+.h-head{margin-bottom:64px;}
+.h-head h2{font-size:clamp(30px,3.9vw,52px);line-height:1.08;color:var(--navy);}
+.h-head p{font-size:17px;line-height:1.75;color:var(--mid);max-width:620px;margin-left:auto;margin-right:auto;}
+@media(max-width:760px){.h-section{padding:74px 0;}.h-head{margin-bottom:44px;}}
+
+/* Hero — larger, tighter, more confident */
+.h-hero h1{font-size:clamp(36px,5.2vw,64px)!important;line-height:1.03;letter-spacing:-.04em;font-weight:800;}
+.h-hero p.lead{font-size:19px;line-height:1.65;color:#cdd6e3;}
+
+/* Premium nav — translucent, blurred (light mode only) */
+html:not(.dark) nav{background:rgba(255,255,255,.82);backdrop-filter:saturate(180%) blur(10px);-webkit-backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--border);}
+
+/* Buttons — calm, refined, subtle gradient depth */
+.h-btn{border-radius:12px;font-size:15px;padding:15px 28px;transition:transform .28s var(--ease),box-shadow .28s var(--ease),background .28s var(--ease);}
+.h-btn-primary{background:linear-gradient(180deg,#22BEE0,var(--teal-dark));box-shadow:var(--shadow-sm);}
+.h-btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(27,181,216,.30);}
+.h-btn-ghost{border:1px solid var(--border);color:var(--navy);}
+.h-btn-ghost:hover{border-color:var(--teal);color:var(--teal);background:rgba(27,181,216,.04);}
+.nav-cta{background:linear-gradient(180deg,#22BEE0,var(--teal-dark))!important;border-radius:10px!important;padding:10px 20px!important;box-shadow:0 1px 2px rgba(11,18,32,.06);}
+.btn{transition:transform .28s var(--ease),background .28s var(--ease),box-shadow .28s var(--ease);letter-spacing:.2px;}
+
+/* Cards — hairline border, minimal shadow, refined lift */
+.h-card,.h-chal-item,.serve-card,.sov-card,.insight-card{border:1px solid var(--border);border-radius:18px;box-shadow:var(--shadow-sm);transition:transform .32s var(--ease),box-shadow .32s var(--ease),border-color .32s var(--ease);}
+.h-card{padding:34px;}
+.h-card:hover,.serve-card:hover,.sov-card:hover,.insight-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:#dfe4ea;}
+.h-card .tile{border-radius:14px;}
+
+/* Trust bar — deeper, quieter premium */
+.h-trust-inner{background:#0B1220;border:1px solid rgba(255,255,255,.06);box-shadow:0 30px 70px rgba(11,18,32,.16);}
+.h-stat .num{font-weight:800;letter-spacing:-.03em;}
+
+/* Premium scroll-reveal (matches Motion spec: ~0.7s, ease [0.22,1,0.36,1]) */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .7s var(--ease),transform .7s var(--ease);will-change:opacity,transform;}
+.reveal.in{opacity:1;transform:none;}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important;transition:none!important;}}
+
+/* Eyebrows / labels — refined */
+.h-eyebrow,.label{color:var(--teal);font-weight:700;letter-spacing:1.4px;}
+
+/* Soften legacy hard borders to the new hairline */
+.footer-col h5{letter-spacing:.2px;}
