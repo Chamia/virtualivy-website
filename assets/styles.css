@@ -957,3 +957,9 @@ html:not(.dark) nav{background:rgba(255,255,255,.82);backdrop-filter:saturate(18
 
 /* Author box rounding to match */
 .author-box{border-radius:16px;}
+
+/* ===== QA: dark-mode integrity for premium layer ===== */
+html.dark{--border:rgba(255,255,255,.09);}   /* so var(--border) is correct in dark mode everywhere */
+html.dark .h-chal-item,html.dark .serve-card{background:#131C2B;border-color:rgba(255,255,255,.08);}
+html.dark .article a:not(.h-btn):not(.btn){color:#5FD3EC;}  /* readable teal links on dark */
+html.dark .h-btn-ghost{color:#F1F5F9;border-color:rgba(255,255,255,.16);}
