@@ -29,8 +29,8 @@ Authority blogs work on three levers at once:
 | Workplace health & safety (OSHA) for SMEs | Legal duty; little SME-friendly content | ✅ published |
 | Performance management in Kenya | Service-aligned; mid funnel | ✅ published |
 | Onboarding process that works | Already teased "coming soon" on Insights | ✅ published |
-| Employee handbook template guide | High intent; links to policies service | ☐ |
-| HR for remote/hybrid teams in Kenya | Growing; differentiator | ☐ |
+| Employee handbook template guide | High intent; links to policies service | ✅ published |
+| HR for remote/hybrid teams in Kenya | Growing; differentiator | ✅ published |
 
 ## Prioritized calendar (1 article/week = compounding authority)
 1. Minimum Wage in Kenya 2026 → kw "minimum wage Kenya 2026" → links to HR Compliance / Labour Law
