@@ -919,3 +919,41 @@ html:not(.dark) nav{background:rgba(255,255,255,.82);backdrop-filter:saturate(18
 .h-cta .h-btn-white:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.3);}
 .h-cta-sub{margin-top:16px!important;font-size:13px;color:rgba(255,255,255,.55)!important;letter-spacing:.3px;}
 @media(max-width:760px){.h-cta{padding:72px 22px;}}
+
+/* ============================================================
+   PREMIUM LAYER · SERVICE & ARTICLE PAGE TEMPLATES
+   ============================================================ */
+/* Page hero banner (service / location pages) */
+.page-hero{padding:106px 5% 94px;background:radial-gradient(900px 360px at 50% -25%,rgba(27,181,216,.20),transparent 62%),linear-gradient(180deg,rgba(11,18,32,.86),rgba(11,18,32,.95)),url('hero2.webp') center/cover no-repeat var(--navy);}
+.page-hero .label{color:#7FD8EC;}
+.page-hero h1{font-size:clamp(34px,4.8vw,58px);letter-spacing:-.035em;line-height:1.05;margin-bottom:18px;}
+.page-hero p{font-size:18px;color:#cbd5e1;line-height:1.7;max-width:600px;}
+@media(max-width:760px){.page-hero{padding:72px 5% 60px;}}
+
+/* Buttons — unify to rounded-rect + premium primary (subtle gradient, calm shadow) */
+.btn{border-radius:12px;}
+.btn-primary{background:linear-gradient(180deg,#22BEE0,var(--teal-dark));box-shadow:var(--shadow-sm);}
+.btn-primary:hover{background:linear-gradient(180deg,#1FB2D6,#12879F);transform:translateY(-2px);box-shadow:0 12px 30px rgba(27,181,216,.28);}
+
+/* Article typography — premium reading rhythm */
+.article p{font-size:17px;line-height:1.8;color:#3A4452;margin-bottom:22px;}
+.article li{font-size:17px;line-height:1.8;color:#3A4452;}
+.article h2{font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(23px,2.5vw,30px);letter-spacing:-.022em;color:var(--navy);margin:50px 0 16px;}
+.article h3{font-family:'Montserrat',sans-serif;font-weight:700;font-size:20px;letter-spacing:-.012em;color:var(--navy);margin:30px 0 10px;}
+.article a:not(.h-btn):not(.btn){color:var(--teal-dark);font-weight:600;}
+.article a:not(.h-btn):not(.btn):hover{text-decoration:underline;text-underline-offset:3px;}
+
+/* Article CTA — premium dark band with teal glow */
+.article-cta{background:radial-gradient(700px 280px at 50% -45%,rgba(27,181,216,.22),transparent 60%),linear-gradient(180deg,#0E1A2B,#0B1220);border:1px solid rgba(255,255,255,.06);border-radius:20px;padding:46px 40px;margin-top:48px;}
+.article-cta h3{font-family:'Montserrat',sans-serif;font-weight:800;font-size:clamp(20px,2.4vw,26px);letter-spacing:-.02em;color:#fff;}
+.article-cta p{color:#cdd6e3;font-size:16px;}
+@media(max-width:760px){.article-cta{padding:34px 24px;}}
+
+/* FAQ — refined, sans summary */
+.faq-section{padding:100px 5%;}
+.faq-item{border:1px solid var(--border);border-radius:14px;}
+.faq-item summary{font-family:'Montserrat',sans-serif;font-weight:700;font-size:16px;letter-spacing:-.01em;}
+.faq-item[open]{border-color:var(--teal);box-shadow:var(--shadow);}
+
+/* Author box rounding to match */
+.author-box{border-radius:16px;}
