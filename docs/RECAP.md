@@ -28,6 +28,18 @@ The website is **technically excellent and competitive** — validated against 4
 - **Technical:** sitemap (36 URLs), clean-URL canonicals, async fonts, hero preload, image alt text, apple-touch-icon, skip-link + `#main` landmark, accessible focus rings, reduced-motion.
 - **UX/design:** full-bleed hero, dark mode, animated stat count-up, scroll-reveal, **trusted-by strip** (sector chips now; ready to swap real client logos via `.tb-logo`), honest stats band, testimonials section (representative, with permission disclaimer), author boxes on articles.
 
+## DONE — SEO Site Checkup fixes (2026-06-22)
+- **Modern image format:** hero/hero2 converted to **WebP** (hero 219KB→116KB), plus 960px **mobile hero** WebP served via media query (fixes "modern format" + "properly sized images"). JPGs kept as graceful fallback (bg-color shows if WebP unsupported).
+- **Favicon:** real **favicon.ico + favicon-32.png + apple-touch-icon.png** generated and referenced (fixes "favicon not referenced").
+- **Custom 404 page** (`404.html`) — branded, helpful links (GitHub Pages serves it with 404 status).
+- **Deferred** Lucide + main.js scripts; **WebP hero preload**; homepage **OG/Twitter title+description synced** to current (were stale).
+- Note: `styles.css` remains render-blocking by design — LCP/FCP are already green (1.38s), so async CSS would risk a flash for no real gain.
+
+## PENDING — needs your DNS / infra
+- **www → non-www redirect** (Cloudflare Redirect Rule) — fixes "URL canonicalization".
+- **SPF record** (DNS TXT on virtualivy.co.ke): if you don't send email from @virtualivy.co.ke, add `v=spf1 -all`; if you use Google Workspace, add `v=spf1 include:_spf.google.com ~all`.
+- **GA4** — paste your `G-XXXXXXXXXX` and I'll wire analytics + conversion events.
+
 ## DONE — infrastructure fixes
 - **Cloudflare crawl block RESOLVED:** Bot Fight Mode OFF; "Block AI bots" → Do not block; managed robots.txt → Disabled (serves own clean robots.txt). Verified: Googlebot/GPTBot/ClaudeBot/Perplexity/SemrushBot all HTTP 200.
 - **Brand search win:** homepage indexed and ranking #1 for "Virtual Ivy".
