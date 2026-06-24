@@ -120,3 +120,24 @@ applyThemeIcon(document.documentElement.classList.contains('dark') ? 'dark' : 'l
   },{threshold:0.5});
   nums.forEach(function(n){io.observe(n);});
 })();
+
+/* ===== GA4 conversion events (fire only when gtag is present) ===== */
+(function(){
+  function track(name,params){ if(typeof window.gtag==='function'){ window.gtag('event',name,params||{}); } }
+  document.addEventListener('click',function(e){
+    var el=e.target.closest?e.target.closest('a,button'):null; if(!el)return;
+    var href=(el.getAttribute&&el.getAttribute('href'))||'';
+    var cls=((el.className||'')+'');
+    if(href.indexOf('tel:')===0){ track('contact_phone',{method:'phone'}); }
+    else if(href.indexOf('wa.me')>-1||href.toLowerCase().indexOf('whatsapp')>-1){ track('contact_whatsapp',{method:'whatsapp'}); }
+    else if(href.indexOf('mailto:')===0){ track('contact_email',{method:'email'}); }
+    else if(/contact(\.html)?($|[#?])/.test(href) && /h-btn|nav-cta|btn-primary|btn-white|mob-cta|sc-btn/i.test(cls)){
+      track('book_call',{cta:(el.textContent||'').trim().slice(0,40)});
+    }
+  },true);
+  document.addEventListener('submit',function(e){
+    var f=e.target; if(!f||!f.id)return;
+    if(f.id==='contactForm'){ track('generate_lead',{form:'contact'}); }
+    else if(f.id==='leadForm'){ track('generate_lead',{form:'lead_magnet'}); }
+  },true);
+})();
