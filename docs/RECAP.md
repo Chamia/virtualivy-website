@@ -1,6 +1,6 @@
 # Virtual Ivy Consultancy — Project Recap
 
-_Last updated: 2026-06-24_
+_Last updated: 2026-06-25_
 
 A living status doc for the website + SEO project. For the action checklist, see [SEO-PLAYBOOK.md](SEO-PLAYBOOK.md); for the blog/authority plan see [CONTENT-STRATEGY.md](CONTENT-STRATEGY.md).
 
@@ -41,6 +41,8 @@ Brief was a "web-design studio" template; we applied the **craft** to the real H
 - **Cloudflare crawl block RESOLVED:** Bot Fight Mode OFF; "Block AI bots" → Do not block; managed robots.txt → Disabled (serves own clean robots.txt). Verified: Googlebot/GPTBot/ClaudeBot/Perplexity/SemrushBot all HTTP 200.
 - **SEO Site Checkup fixes:** WebP images, real favicon, custom 404, deferred scripts, OG/Twitter sync.
 - **Brand search win:** homepage indexed and ranking #1 for "Virtual Ivy".
+- **Cloudflare/DNS completed (2026-06-25):** www → apex **301** redirect live (verified, 1 hop, no loop); **SPF** record live (`v=spf1 -all`); HTTP→HTTPS + HSTS already on. URL-canonicalization SEO-checker item cleared.
+- **GA4 analytics live (2026-06-25):** `G-L5NT97G31J` base tag on all 50 pages + conversion events in main.js — `generate_lead` (contact + lead-magnet forms), `book_call` (CTA→contact), `contact_phone` (tel:), `contact_whatsapp` (wa.me), `contact_email` (mailto:). Loaded async. USER TODO: GA4 → Admin → Events → mark `generate_lead` + `book_call` as **Key events** (conversions) once they've fired.
 
 ---
 
@@ -51,17 +53,15 @@ Brief was a "web-design studio" template; we applied the **craft** to the real H
 4. **GSC** — Request Indexing on key URLs; resubmit sitemap; add Bing Webmaster Tools.
 5. **LinkedIn** — user does NOT control posting access; at minimum ensure Website field = the site.
 
-## PENDING — needs your DNS / infra
-- **www → non-www redirect** (Cloudflare Redirect Rule) — fixes "URL canonicalization" (www currently returns HTTP 000 / no DNS record). Exact steps given.
-- **SPF record** (DNS TXT): no email from @virtualivy.co.ke → `v=spf1 -all`; Google Workspace → `v=spf1 include:_spf.google.com ~all`.
-- **GA4** — paste `G-XXXXXXXXXX` → I wire analytics + conversion events (form/call/WhatsApp).
+## ✅ DNS / infra — DONE (was pending)
+- www→apex 301, SPF, GA4 all complete (see "infrastructure fixes" above). Only the empty *auto*-404 remains (Cloudflare clean-URL quirk; cosmetic, low priority).
 
 ## PENDING — needs user-supplied data (then I implement)
+- **Formspree ID** (or Supabase anon key) → make contact forms actually **deliver** to the inbox. Currently they *simulate* success (`FORMSPREE_ENDPOINT="…/YOUR_FORM_ID"` in `assets/main.js`). Get a free form ID at formspree.io → paste it → 1-line swap. NOTE: the leaked Postgres password must be rotated and never used.
 - **Real reviews** → `AggregateRating` schema (must not be faked).
 - **Real testimonials (named) / client logos / case studies** → premium case-study + metrics + logo-wall sections (scaffolds ready: `.tb-logo`, testimonials section, stats band).
 - **Real numbers** (clients served, hires made) → stats band.
 - **IHRM membership number / certifications** → real credential badge (E-E-A-T).
-- **Formspree ID or Supabase anon key** → make contact forms actually deliver (currently simulate). NOTE: the leaked Postgres password must be rotated and never used.
 
 ---
 

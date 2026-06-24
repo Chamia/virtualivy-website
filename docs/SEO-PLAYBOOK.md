@@ -196,3 +196,25 @@ Just submit the NAP block above + the GBP description. Done.
 > Hi [Name], glad the HR health-check was useful! As mentioned, a short Google review would really help us: [PASTE GBP REVIEW LINK]. And if you'd like us to action any of the gaps we found, just say the word — happy to scope it. Thanks again!
 
 **Where to get your GBP review link:** Google Business Profile → **"Ask for reviews"** → copy the short link → paste it into [PASTE GBP REVIEW LINK] above.
+
+---
+
+## PART 5 — Analytics, technical status & forms
+
+### ✅ Done (technical/DNS — no action needed)
+- **GA4 live:** `G-L5NT97G31J` on all pages + conversion events (`generate_lead`, `book_call`, `contact_phone`, `contact_whatsapp`, `contact_email`).
+- **www → apex 301 redirect** (Cloudflare) · **SPF** record (`v=spf1 -all`) · HTTPS/HSTS.
+- **WebP images, real favicon, custom 404 page, sitemap, schema, llms.txt, premium design.**
+
+### Your one GA4 toggle (2 min)
+Turn lead actions into measurable **conversions**:
+1. **analytics.google.com → Admin → Events → Key events.**
+2. Toggle on **`generate_lead`** and **`book_call`** (they appear here after firing once — visit the site and click a CTA to trigger them).
+3. Now GA4 reports your real **lead/booking rate**, not just traffic.
+
+### Make the contact forms actually deliver (the last on-site lever)
+Right now forms show "success" but **don't send** anywhere (placeholder). To fix, 5 minutes:
+1. Go to **formspree.io** → sign up (free tier) → **New Form** → set the destination to **hello@virtualivy.net** → copy the form ID (looks like `xyzabcd` / endpoint `https://formspree.io/f/xyzabcd`).
+2. Send me the ID (or paste it into `assets/main.js`, replacing `YOUR_FORM_ID` in `FORMSPREE_ENDPOINT`).
+3. Done — contact + checklist forms then deliver straight to your inbox.
+> ⚠️ Do NOT use the Supabase Postgres connection string/password for this — it was exposed and must be rotated. Use Formspree, or the Supabase **anon/public** key with RLS.
