@@ -55,6 +55,8 @@ Go to **business.google.com → "Manage now"**.
 
 ## ⭐ PRIORITY: Your first 10 links — tool-validated (do these THIS week)
 
+> 📌 **Use [BACKLINK-PLAN.md](BACKLINK-PLAN.md) — it's the verified, expanded version of this list** (56 domains research-checked). Two corrections to the table below: **BusinessList.co.ke is PAID** (skip unless you choose to pay), and **cylex.co.ke is the wrong site** (an unrelated cleaning company — use **cylex-international.com**). Top verified free wins: Google Business Profile, GoodFirms, Clutch (needs 3 reviews), Go Africa Online, Crunchbase, BusinessFinder.co.ke, BrighterMonday & Fuzu employer pages.
+
 **Why this works:** Semrush's Top-10 benchmark (Jun 2026) showed the Kenya pages ranking for *"hr consulting kenya"* have an average of **just ~2 referring domains**, and *"hr compliance kenya"* has **0**. You currently have **1**. So a handful of real, relevant links genuinely moves you into contention for those terms. (Note: *"hr consulting nairobi"* is harder — top-10 average is ~23 domains — so treat that as a longer game.)
 
 **THE NAP — copy-paste this EXACTLY the same everywhere (Name, Address, Phone). Consistency is what counts:**
