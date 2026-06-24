@@ -1,7 +1,7 @@
 # Virtual Ivy — SEO Action Playbook
 *(Your click-by-click checklist + ready-to-send outreach templates. Do these in order.)*
 
-The website build is done (35 pages, schema incl. FAQ/LocalBusiness, sitemap, clean URLs, crawlers unblocked at Cloudflare, IndexNow live). Rankings now come from **indexing → Google Business Profile → reviews → backlinks → time**. This file is everything you need to do that.
+The website build is done (50 pages, premium design, schema incl. FAQ/LocalBusiness, sitemap, clean URLs, crawlers unblocked at Cloudflare, GA4 + IndexNow live). Rankings now come from **indexing → Google Business Profile → reviews → backlinks → time**. This file is everything you need to do that.
 
 ---
 
@@ -9,7 +9,7 @@ The website build is done (35 pages, schema incl. FAQ/LocalBusiness, sitemap, cl
 
 > Use the **extensionless** URLs (e.g. `https://virtualivy.co.ke/hr-consulting-kenya`), not the `.html` versions — those are the real/canonical URLs now.
 
-1. **Re-submit the sitemap** (it now has 36 URLs).
+1. **Re-submit the sitemap** (it now has 50 URLs).
    - GSC → **Sitemaps** → type `sitemap.xml` → **Submit**. (Status already "Success" — this just refreshes it.)
 
 2. **Request indexing** for your priority pages (one at a time):
