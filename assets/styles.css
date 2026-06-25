@@ -963,3 +963,9 @@ html.dark{--border:rgba(255,255,255,.09);}   /* so var(--border) is correct in d
 html.dark .h-chal-item,html.dark .serve-card{background:#131C2B;border-color:rgba(255,255,255,.08);}
 html.dark .article a:not(.h-btn):not(.btn){color:#5FD3EC;}  /* readable teal links on dark */
 html.dark .h-btn-ghost{color:#F1F5F9;border-color:rgba(255,255,255,.16);}
+
+/* Authoritative source citations on articles */
+.sources{font-size:13.5px;color:var(--mid);border-top:1px solid var(--border);padding-top:16px;margin:26px 0 0;line-height:1.7;}
+.sources a{color:var(--teal-dark);font-weight:600;}
+html.dark .sources{border-top-color:rgba(255,255,255,.08);}
+html.dark .sources a{color:var(--teal);}
