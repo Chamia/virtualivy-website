@@ -2,7 +2,12 @@
 
 _Last updated: 2026-06-25_
 
-A living status doc for the website + SEO project. For the action checklist, see [SEO-PLAYBOOK.md](SEO-PLAYBOOK.md); for the blog/authority plan see [CONTENT-STRATEGY.md](CONTENT-STRATEGY.md).
+A living status doc for the website + SEO project. Companion docs: action checklist [SEO-PLAYBOOK.md](SEO-PLAYBOOK.md) · blog/authority plan [CONTENT-STRATEGY.md](CONTENT-STRATEGY.md) · verified backlink targets [BACKLINK-PLAN.md](BACKLINK-PLAN.md) · ready-to-send op-ed pitches [GUEST-POST-PITCHES.md](GUEST-POST-PITCHES.md).
+
+## Latest validation (late Jun 2026)
+- **Seobility on-page: 88/100, "Issues: 0"** — Meta 100 · Page quality 100 · **Server 100** (www↔non-www redirect confirmed correct). Remaining warnings are heuristics (heading count, anchor reuse, charset header) — deliberately NOT chased.
+- **SEO Site Checkup: 85→ rising; AI Visibility ~71.**
+- **Semrush Kenya Position Tracking: Visibility 16.76% (from 0), ~position 5** — real early traction. Semrush still shows **0 backlinks** → backlinks is THE remaining lever.
 
 ---
 
@@ -26,6 +31,8 @@ The website is **technically excellent, content-rich, and now visually premium**
 - **Content engine:** timely statutory articles (NSSF 2026, minimum wage 2026, SHIF, Housing Levy) + evergreen guides (leave, OSHA, probation, disability quota, onboarding, handbooks, job descriptions, remote HR, etc.), humanised voice, "related insights" blocks, internal links up to service pages. Full plan in CONTENT-STRATEGY.md (all 12 calendar topics ✅).
 - **AEO/GEO:** `llms.txt` (AI-model site summary), FAQ + DefinedTerm schema, AI crawlers allowed in robots.txt, IndexNow submitted (Bing/Yandex).
 - **Technical:** sitemap (50 URLs), clean-URL canonicals, async fonts, WebP hero + mobile hero + preload, image alt text, real favicon set, skip-link + `#main` landmark, accessible focus rings, reduced-motion, deferred scripts.
+- **Clean internal links (2026-06-25):** all ~1,964 internal links converted to extensionless root-relative (`/services`, not `services.html`) — removes the Cloudflare 307 redirect hop on every link + clears ~557 "links to redirect" warnings. Assets keep `.html`. **Future page-builds must use `/slug` internal links.**
+- **E-E-A-T / AEO citations (2026-06-25):** "Official sources" block on 16 statutory articles linking authorities (KRA, NSSF, Social Health Authority, Kenya Law) — addresses "minimal source citation" + boosts AI citability. Homepage FAQ expanded to 7 Q&As (compliance) + schema synced.
 
 ## DONE — premium design transformation (2026-06-23/24)
 Brief was a "web-design studio" template; we applied the **craft** to the real HR business (confirmed via decision: keep HR, light-premium aesthetic, no fabrication). Implemented as a layered append to the shared `assets/styles.css` (lifts all 50 pages via cascade):
@@ -49,7 +56,7 @@ Brief was a "web-design studio" template; we applied the **craft** to the real H
 ## PENDING — off-site (USER ONLY — the real remaining levers)
 1. **Google Business Profile** (exists, user-managed) — rename to "Virtual Ivy Consultancy"; fix city **Kiambu → Nairobi**; fix hours ("Open 24 hours" → Mon–Fri 08:30–17:00); add services, photos, description (playbook Part 2).
 2. **Reviews** — none yet. Use playbook Part 4 messages / pilot offer. Target 10+. (LinkedIn company pages can't host reviews; use GBP + personal-profile recommendations.)
-3. **Backlinks** — only ~1 referring domain. Playbook "first 10": GBP, goafricaonline.com, advance-africa.com, BusinessList.co.ke, etc. Benchmark: "hr consulting kenya" needs ~2 ref domains; "hr compliance kenya" 0 (winnable on content); "hr consulting nairobi" ~23 (long game).
+3. **Backlinks** — only ~1 referring domain; **THE remaining lever.** Full verified plan in **BACKLINK-PLAN.md** (56 domains checked). First-10 free wins: GBP, GoodFirms, Clutch, Go Africa Online, Crunchbase, BusinessFinder.co.ke, BrighterMonday/Fuzu employer pages. Highest value = **guest posts** — 3 ready-to-send pitches in **GUEST-POST-PITCHES.md** (Business Daily/NSSF, Nation/disability-quota, Standard/min-wage). Benchmark: "hr consulting kenya" needs ~2 ref domains; "hr compliance kenya" 0; "hr consulting nairobi" ~23. NOTE: corrected earlier errors — BusinessList.co.ke is PAID; cylex.co.ke is the wrong site (use cylex-international.com).
 4. **GSC** — Request Indexing on key URLs; resubmit sitemap; add Bing Webmaster Tools.
 5. **LinkedIn** — user does NOT control posting access; at minimum ensure Website field = the site.
 
