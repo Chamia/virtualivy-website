@@ -21,8 +21,8 @@ document.addEventListener('click',function(e){
   else if(!dd.contains(e.target)){menu.classList.remove('open');}
 });
 
-/* FORM BACKEND (Formspree) — set your form ID below, replacing YOUR_FORM_ID. */
-var FORMSPREE_ENDPOINT="https://formspree.io/f/YOUR_FORM_ID";
+/* FORM BACKEND (Formspree) — live endpoint for Virtual Ivy Consultancy. */
+var FORMSPREE_ENDPOINT="https://formspree.io/f/mnjkdpdw";
 function postToFormspree(form){
   if(FORMSPREE_ENDPOINT.indexOf('YOUR_FORM_ID')>-1){console.warn('[Virtual Ivy] Formspree not configured yet.');return Promise.resolve(true);}
   return fetch(FORMSPREE_ENDPOINT,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}}).then(function(r){return r.ok;}).catch(function(){return false;});
