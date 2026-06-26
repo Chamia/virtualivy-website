@@ -64,8 +64,10 @@ Brief was a "web-design studio" template; we applied the **craft** to the real H
 ## ✅ DNS / infra — DONE (was pending)
 - www→apex 301, SPF, GA4 all complete (see "infrastructure fixes" above). Only the empty *auto*-404 remains (Cloudflare clean-URL quirk; cosmetic, low priority).
 
+## ✅ Contact forms — LIVE (2026-06-26)
+- Wired to **Formspree** (`https://formspree.io/f/mnjkdpdw`) in `assets/main.js` — both the contact form and the lead-magnet form now deliver real submissions (AJAX, reads success/error). GA4 `generate_lead` still fires on submit. (Earlier Google Apps Script option kept in CONTACT-FORM-SETUP.md as an alternative.) NOTE: the leaked Postgres password must still be rotated and never used.
+
 ## PENDING — needs user-supplied data (then I implement)
-- **Formspree ID** (or Supabase anon key) → make contact forms actually **deliver** to the inbox. Currently they *simulate* success (`FORMSPREE_ENDPOINT="…/YOUR_FORM_ID"` in `assets/main.js`). Get a free form ID at formspree.io → paste it → 1-line swap. NOTE: the leaked Postgres password must be rotated and never used.
 - **Real reviews** → `AggregateRating` schema (must not be faked).
 - **Real testimonials (named) / client logos / case studies** → premium case-study + metrics + logo-wall sections (scaffolds ready: `.tb-logo`, testimonials section, stats band).
 - **Real numbers** (clients served, hires made) → stats band.
