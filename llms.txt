@@ -50,6 +50,11 @@
 ## Reference
 - [Kenya HR & Labour Law Glossary](https://virtualivy.co.ke/kenya-hr-glossary): Plain-English definitions of key HR and labour-law terms (PAYE, NSSF, SHIF, redundancy, probation, unfair dismissal, leave and more).
 
+## Free HR tools & calculators
+- [Kenya HR Compliance Hub](https://virtualivy.co.ke/kenya-hr-compliance-hub): 2026 statutory rates, a PAYE calculator, a remittance calendar and every employer compliance guide in one place.
+- [Kenya PAYE & Net Pay Calculator](https://virtualivy.co.ke/kenya-paye-calculator): Free 2026 calculator for PAYE, NSSF, SHIF, the Affordable Housing Levy and net take-home pay.
+- [Free Kenya HR Templates](https://virtualivy.co.ke/kenya-hr-templates): Downloadable employment contract, offer letter, job description, leave form, warning and termination letters, onboarding checklist and NDA.
+
 ## Company
 - [About Virtual Ivy Consultancy](https://virtualivy.co.ke/about): Who we are, our approach and experience.
 - [Services Overview](https://virtualivy.co.ke/services): All HR services in one place.
