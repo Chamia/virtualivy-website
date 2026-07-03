@@ -1,18 +1,21 @@
 # Virtual Ivy Consultancy — Project Recap
 
-_Last updated: 2026-06-25_
+_Last updated: 2026-07-03_
 
-A living status doc for the website + SEO project. Companion docs: action checklist [SEO-PLAYBOOK.md](SEO-PLAYBOOK.md) · blog/authority plan [CONTENT-STRATEGY.md](CONTENT-STRATEGY.md) · verified backlink targets [BACKLINK-PLAN.md](BACKLINK-PLAN.md) · ready-to-send op-ed pitches [GUEST-POST-PITCHES.md](GUEST-POST-PITCHES.md).
+A living status doc for the website + SEO project. Companion docs: action checklist [SEO-PLAYBOOK.md](SEO-PLAYBOOK.md) · blog/authority plan [CONTENT-STRATEGY.md](CONTENT-STRATEGY.md) · verified backlink targets [BACKLINK-PLAN.md](BACKLINK-PLAN.md) · ready-to-send op-ed pitches [GUEST-POST-PITCHES.md](GUEST-POST-PITCHES.md) · **full authority/growth strategy [AUTHORITY-DOMINATION-PLAN.md](AUTHORITY-DOMINATION-PLAN.md)**.
 
-## Latest validation (late Jun 2026)
-- **Seobility on-page: 88/100, "Issues: 0"** — Meta 100 · Page quality 100 · **Server 100** (www↔non-www redirect confirmed correct). Remaining warnings are heuristics (heading count, anchor reuse, charset header) — deliberately NOT chased.
-- **SEO Site Checkup: 85→ rising; AI Visibility ~71.**
-- **Semrush Kenya Position Tracking: Visibility 16.76% (from 0), ~position 5** — real early traction. Semrush still shows **0 backlinks** → backlinks is THE remaining lever.
+## Latest status (2026-07-03)
+- **Full crawl (Screaming-Frog-style, all 53 pages): technically pristine.** 0 broken links · 0 orphans · 0 missing/duplicate titles · 0 missing meta descriptions · 0 missing canonicals · 0 missing OG · exactly 1 H1/page · 266 images all with alt · full sitemap coverage · 234 JSON-LD blocks all valid. **No on-page defect worth fixing remains.**
+- **Verdict (stated plainly): the bottleneck is EXTERNAL authority, not the website.** On-page/technical/entity/AEO is at its practical ceiling. Six tools + a manual crawl agree. Further on-page tweaks = vanity work; stopped by design.
+- **Semrush Kenya:** Visibility ~16.76% (from 0), ~position 5; still **~0 backlinks** → off-site is THE lever.
+- Prior scores retained: Seobility 88/100 (Issues 0), Ooty 86, Schema 100, SSR 100.
 
 ---
 
 ## TL;DR
-The website is **technically excellent, content-rich, and now visually premium** — a cohesive Stripe/Ramp-grade light-premium design system across all 50 pages. Validated against 4 SEO tools (Semrush, MIA Optimize, Seobility, SEO Site Checkup) and 3 competitors (hackhouse.africa, mctaba.com). The site **ranks #1 for the brand term "Virtual Ivy"** (above LinkedIn). The remaining work to rank for *money* terms is **off-site: Google Business Profile + reviews + backlinks + indexing time** — none of which can be done in code. The one on-site upgrade left (premium case studies / metrics / logos) is **blocked on real client data**, which we will never fabricate.
+The website is **technically excellent, content-rich, visually premium, and now backed by a linkable-asset library** — **53 pages** + 8 downloadable templates. Validated against 6 tools (Semrush, MIA, Seobility, SEO Site Checkup, Ooty, + expert review) and a full manual crawl: **on-page is done.** The site **ranks #1 for the brand term "Virtual Ivy"** (above LinkedIn). Every remaining lever to win *money* terms is **off-site: directories + IHRM registration + Google Business Profile + reviews + editorial backlinks + branded-search demand + indexing time** — see [AUTHORITY-DOMINATION-PLAN.md](AUTHORITY-DOMINATION-PLAN.md). The one on-site upgrade still blocked on real data (case studies / metrics / named testimonials / AggregateRating) will **never be fabricated.**
+
+**Key reframe (2026-07-03):** for commercial queries ("best HR firm Kenya"), Google AND the AI engines rank/cite **directories + "best-of" listicles + consensus sources — not company homepages.** So the next win is getting Virtual Ivy *into* the third-party graph (directories, IHRM register, listicles) with consistent NAP — not more on-page work. Perplexity is the most winnable AI engine (cites brands ~22× more than ChatGPT; rewards schema + listicle formats).
 
 ---
 
@@ -20,7 +23,7 @@ The website is **technically excellent, content-rich, and now visually premium**
 - **Canonical name:** Virtual Ivy Consultancy (matches LinkedIn). Short form "Virtual Ivy" is an alternate.
 - **NAP:** `Virtual Ivy Consultancy · Nairobi, Kenya · +254 723 828 190 · hello@virtualivy.net · https://virtualivy.co.ke`
 - **Positioning:** B2B / client-focused HR consulting, recruitment & outsourcing for startups, SMEs, NGOs, corporates. NOT job-seeker/CV services. NOT a web-design studio. **Never fabricate stats/testimonials/reviews/metrics.**
-- **Stack:** static HTML/CSS/JS · GitHub Pages + Cloudflare · clean (extensionless) URLs · **50 pages**.
+- **Stack:** static HTML/CSS/JS · GitHub Pages + Cloudflare · clean (extensionless) URLs · **53 pages + 8 downloadable templates**. Future page-builds must use `/slug` internal links + carry the full `#organization` node (already on every page).
 
 ---
 
@@ -34,6 +37,22 @@ The website is **technically excellent, content-rich, and now visually premium**
 - **Clean internal links (2026-06-25):** all ~1,964 internal links converted to extensionless root-relative (`/services`, not `services.html`) — removes the Cloudflare 307 redirect hop on every link + clears ~557 "links to redirect" warnings. Assets keep `.html`. **Future page-builds must use `/slug` internal links.**
 - **E-E-A-T / AEO citations (2026-06-25):** "Official sources" block on 16 statutory articles linking authorities (KRA, NSSF, Social Health Authority, Kenya Law) — addresses "minimal source citation" + boosts AI citability. Homepage FAQ expanded to 7 Q&As (compliance) + schema synced.
 - **Service-page depth (2026-06-26):** addressed external critique that service pages were thin (85–230 words). ALL 14 service/location pages now **512–1,007 words** of original, useful, keyword-rich content (HR consultant Nairobi, recruitment agency Nairobi, outsourced HR, talent acquisition, executive search, startup/SME/NGO HR…) with deep internal links. Top 3 written manually; 9 via a verified 2-stage workflow (expand → fact/safety-check, no fabrication). These spoke pages — not the homepage — are what should rank for money terms.
+
+## DONE — entity / AEO / GEO pass (2026-07-03)
+- **Homepage Organization entity enriched:** added `numberOfEmployees` (2–10, from LinkedIn), `knowsLanguage` (en/sw), Nairobi as explicit `areaServed` City, and expanded `knowsAbout` 7→18 topics (all page-backed: PAYE, NSSF, SHIF, Housing Levy, Employment Act 2007, OSHA, executive search, etc.) — direct topical-authority signal to the Knowledge Graph + AI retrievers.
+- **`foundingDate` deliberately NOT set:** LinkedIn says founded 2021, but 25 pages claim the firm has "10+ years' experience." Asserting a contradicting date would hurt entity trust. **USER TODO: resolve the conflict** — either reword copy to "a team with 10+ years' *combined* experience," or confirm the real founding year and it gets added consistently.
+- **Author entity standardized sitewide:** fixed a 13/11 split between "Virtual Ivy" and "Virtual Ivy Consultancy" author names across 24 articles; all now canonical + `@id`-linked to `#organization`.
+- **FAQ + FAQPage schema added to 8 uncovered pages** (hr-strategy, employee-relations, organizational-development, hr-for-smes, hr-for-corporates, hr-audit, hr-policies, services) — 32 genuine Kenya-specific Q&As. FAQPage coverage now **28 pages**. (Note: FAQ rich results are gov/health-only since 2023; value here is AEO/LLM extraction + long-tail coverage, not snippets.)
+- **Page-level `Service` schema** (provider `@id`, areaServed) added to hr-audit + hr-policies.
+- **Honest correction:** an earlier same-session attempt injected a *compact* `#organization` node on 49 pages on the belief that publisher/author `@id` was "dangling." It wasn't — the full `LocalBusiness #organization` node was already on every page (detection regex false-negative on the `LocalBusiness` type). All 49 redundant nodes **removed**; the author `@id`-linking + entity enrichment + FAQs remain.
+
+## DONE — authority assets v1 / linkable-asset library (2026-07-03)
+Switched from SEO-implementer to Growth/Digital-PR mode. Built genuine citation magnets (interactive tools + downloadables are the #1 backlink format in HR):
+- **`/kenya-paye-calculator`** — interactive Kenya PAYE & Net Pay Calculator (NSSF/SHIF/Housing Levy/PAYE/net + employer cost). **Rates verified accurate against KRA's own worked example** (100K gross → 6,000 NSSF / 2,750 SHIF / 1,500 AHL / taxable 89,750 / PAYE 19,308 / net 70,442). 2026 model: NSSF 6% to KES 108,000 (Tier I 9,000); SHIF max(2.75%,300); AHL 1.5%; taxable = gross − NSSF − SHIF − AHL; PAYE bands 10/25/30/32.5/35% − 2,400 relief. `WebApplication` + `FAQPage` schema.
+- **`/kenya-hr-compliance-hub`** — pillar resource: 2026 rate cards, statutory remittance calendar (all due 9th of following month), curated links to every compliance guide/tool. `CollectionPage` + `ItemList` + `FAQPage` schema (Perplexity favours ItemList).
+- **`/kenya-hr-templates`** + **8 printable templates** (`assets/templates/`): employment contract, offer letter, job description, leave form, disciplinary warning, termination letter, onboarding checklist, NDA. Each **brand-stamped** ("Free HR template by Virtual Ivy" + link) so shared/re-hosted copies carry a citation. `CollectionPage` + `DigitalDocument` schema; templates are `noindex` (library page is the indexable asset).
+- **Wired sitewide:** Resources dropdown + mobile nav on all 50 existing pages now include Hub / PAYE Calculator / HR Templates; sitemap + `llms.txt` updated. Site is now **53 pages + 8 templates**.
+- **NEXT (code-buildable authority assets, ROI order):** HR Compliance Report 2026 (citable statutory dataset) · Media/Press Kit · directory+PR submission kit · 12-month LinkedIn content engine. Salary-benchmark data will **not** be fabricated — needs real placement data or a cited source.
 
 ## DONE — premium design transformation (2026-06-23/24)
 Brief was a "web-design studio" template; we applied the **craft** to the real HR business (confirmed via decision: keep HR, light-premium aesthetic, no fabrication). Implemented as a layered append to the shared `assets/styles.css` (lifts all 50 pages via cascade):
