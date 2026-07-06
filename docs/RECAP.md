@@ -1,6 +1,6 @@
 # Virtual Ivy Consultancy — Project Recap
 
-_Last updated: 2026-07-03_
+_Last updated: 2026-07-07_
 
 A living status doc for the website + SEO project. Companion docs: action checklist [SEO-PLAYBOOK.md](SEO-PLAYBOOK.md) · blog/authority plan [CONTENT-STRATEGY.md](CONTENT-STRATEGY.md) · verified backlink targets [BACKLINK-PLAN.md](BACKLINK-PLAN.md) · ready-to-send op-ed pitches [GUEST-POST-PITCHES.md](GUEST-POST-PITCHES.md) · **full authority/growth strategy [AUTHORITY-DOMINATION-PLAN.md](AUTHORITY-DOMINATION-PLAN.md)**.
 
@@ -83,8 +83,11 @@ Brief was a "web-design studio" template; we applied the **craft** to the real H
 ## ✅ DNS / infra — DONE (was pending)
 - www→apex 301, SPF, GA4 all complete (see "infrastructure fixes" above). Only the empty *auto*-404 remains (Cloudflare clean-URL quirk; cosmetic, low priority).
 
-## ✅ Contact forms — LIVE (2026-06-26)
-- Wired to **Formspree** (`https://formspree.io/f/mnjkdpdw`) in `assets/main.js` — both the contact form and the lead-magnet form now deliver real submissions (AJAX, reads success/error). GA4 `generate_lead` still fires on submit. (Earlier Google Apps Script option kept in CONTACT-FORM-SETUP.md as an alternative.) NOTE: the leaked Postgres password must still be rotated and never used.
+## ✅ Contact forms — LIVE (endpoint fixed 2026-07-07)
+- Wired to **Formspree** in `assets/main.js` — both the contact form and the lead-magnet form deliver real submissions (AJAX, reads success/error). GA4 `generate_lead` still fires on submit. (Google Apps Script alternative kept in CONTACT-FORM-SETUP.md.)
+- **Endpoint history:** original `mnjkdpdw` was tied to an account the user couldn't access (submissions succeeded — verified `{"ok":true}` — but notifications went to an unreachable inbox → looked "broken"). Swapped to user-owned `xdarjzrj`, then to **current `https://formspree.io/f/mgojqzov`**. Each swap was live-tested (returns `ok:true`) before deploy. Diagnosis method worth reusing: a form-encoded `curl` POST to the endpoint; `ok:true` = site/endpoint fine, so any "not working" is account/notification-side (unconfirmed form, wrong recipient, spam, 50/mo free cap).
+- **USER TODO (Formspree dashboard, no code):** (1) click the confirm/activate link Formspree emailed the account owner on first submission; (2) set the form's "Send to" recipient to the inbox actually monitored. Site contact address is **`hello@virtualivy.net`** (322 refs) but the `virtualivy.net` mailbox may not be set up/controlled — if so, either create it (Zoho free tier) or forward it to a Gmail, and point Formspree there. This mailbox also backs all `mailto:` links + schema, so it matters beyond the form.
+- NOTE: the previously leaked Postgres password must still be rotated and never used.
 
 ## PENDING — needs user-supplied data (then I implement)
 - **Real reviews** → `AggregateRating` schema (must not be faked).
