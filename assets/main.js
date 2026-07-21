@@ -21,24 +21,31 @@ document.addEventListener('click',function(e){
   else if(!dd.contains(e.target)){menu.classList.remove('open');}
 });
 
-/* FORM BACKEND (Formspree) — live endpoint for Virtual Ivy Consultancy. */
-var FORMSPREE_ENDPOINT="https://formspree.io/f/mgojqzov";
-function postToFormspree(form){
-  if(FORMSPREE_ENDPOINT.indexOf('YOUR_FORM_ID')>-1){console.warn('[Virtual Ivy] Formspree not configured yet.');return Promise.resolve(true);}
-  return fetch(FORMSPREE_ENDPOINT,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}}).then(function(r){return r.ok;}).catch(function(){return false;});
+/* FORM BACKEND — Google Apps Script web app: appends to the Virtual Ivy Leads Sheet + emails.
+   Setup/script: docs/CONTACT-FORM-SETUP.md */
+var FORM_ENDPOINT="https://script.google.com/macros/s/AKfycbwYC5ZMu4xK__-xsDNQYVa6Ax7xePX91hmkiVu2-OLKh163UEKNgTUzfhAo4FeZ5gzshg/exec";
+function formParams(form){
+  /* URL-encoded, NOT multipart: Apps Script only fills e.parameter for x-www-form-urlencoded. */
+  var fd=new FormData(form),p=new URLSearchParams();
+  fd.forEach(function(v,k){p.append(k,v);});
+  p.append('source_page',location.pathname||'/');
+  return p;
+}
+function postForm(form){
+  return fetch(FORM_ENDPOINT,{method:'POST',body:formParams(form)}).then(function(r){return r.ok;}).catch(function(){return false;});
 }
 function submitForm(e){
   e.preventDefault();var form=e.target;
   var ok=document.getElementById('successMsg'),err=document.getElementById('errorMsg');
   if(ok)ok.style.display='none';if(err)err.style.display='none';
-  postToFormspree(form).then(function(s){
+  postForm(form).then(function(s){
     if(s){if(ok)ok.style.display='block';form.reset();setTimeout(function(){if(ok)ok.style.display='none';},6000);}
     else if(err){err.style.display='block';}
   });
 }
 function submitLead(e){
   e.preventDefault();var form=e.target;
-  postToFormspree(form).then(function(){
+  postForm(form).then(function(){
     var ls=document.getElementById('leadSuccess');if(ls)ls.style.display='block';form.reset();
     setTimeout(function(){window.open('assets/kenya-hr-compliance-checklist.html','_blank','noopener');},400);
   });
