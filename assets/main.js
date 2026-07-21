@@ -32,7 +32,11 @@ function formParams(form){
   return p;
 }
 function postForm(form){
-  return fetch(FORM_ENDPOINT,{method:'POST',body:formParams(form)}).then(function(r){return r.ok;}).catch(function(){return false;});
+  /* Apps Script returns HTTP 200 even when the script itself errors, so trust the JSON body's ok flag. */
+  return fetch(FORM_ENDPOINT,{method:'POST',body:formParams(form)})
+    .then(function(r){return r.json().catch(function(){return {ok:r.ok};});})
+    .then(function(d){if(!(d&&d.ok))console.warn('[Virtual Ivy] form error:',d&&d.error);return !!(d&&d.ok);})
+    .catch(function(err){console.warn('[Virtual Ivy] form request failed:',err);return false;});
 }
 function submitForm(e){
   e.preventDefault();var form=e.target;
